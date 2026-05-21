@@ -1,0 +1,84 @@
+{
+  "lang": "en",
+  "nav": {
+    "home": "Home",
+    "publications": "Publications",
+    "teaching": "Teaching",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "hero": {
+    "downloadCV": "Download CV",
+    "viewPublications": "View Publications",
+    "researchInterests": "Research Interests"
+  },
+  "sections": {
+    "about": "About",
+    "education": "Education",
+    "positions": "Positions & Experience",
+    "awards": "Awards & Scholarships",
+    "training": "Professional Training",
+    "stats": "Academic Profile",
+    "featuredPublications": "Recent Publications",
+    "latestNews": "Latest News",
+    "viewAll": "View all"
+  },
+  "stats": {
+    "scopus": "Scopus Author ID",
+    "orcid": "ORCID iD",
+    "adIndex": "AD Scientific Index",
+    "publications": "Publications",
+    "intlJournals": "International Journals",
+    "tciJournals": "TCI Journals",
+    "conferences": "Conferences"
+  },
+  "publications": {
+    "title": "Publications & Academic Works",
+    "filter": "Filter",
+    "all": "All",
+    "international": "International (Scopus)",
+    "national": "National (TCI)",
+    "conference": "Conference",
+    "academicArticle": "Academic Article",
+    "book": "Book / Textbook",
+    "year": "Year",
+    "allYears": "All Years",
+    "search": "Search by title or co-author...",
+    "noResults": "No publications match your criteria",
+    "showing": "Showing",
+    "of": "of",
+    "items": "items",
+    "doi": "DOI",
+    "pdf": "PDF",
+    "link": "Link"
+  },
+  "teaching": {
+    "title": "Teaching & Advising",
+    "courses": "Courses Taught",
+    "advising": "Thesis Advising",
+    "studentName": "Student",
+    "thesisTitle": "Thesis Title",
+    "year": "Year",
+    "publication": "Publication"
+  },
+  "news": {
+    "title": "News & Articles",
+    "readMore": "Read more",
+    "noNews": "No news yet"
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "address": "Address",
+    "office": "Office",
+    "thanks": "Thank you! Your message has been received."
+  },
+  "footer": {
+    "copyright": "All rights reserved",
+    "lastUpdate": "Last updated"
+  }
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dr. Manit Asanok — Academic Portfolio</title>
+<meta name="description" content="Academic portfolio of Asst. Prof. Dr. Manit Asanok, Educational Technology and Communications, Mahasarakham University, Thailand. Research in AI, Robotics Education, IoT, ICT, and Teacher Professional Development." />
+<meta name="author" content="Manit Asanok" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Dr. Manit Asanok — Academic Portfolio" />
+<meta property="og:description" content="Educational Technology researcher | AI, Robotics Education, IoT, ICT" />
+<meta property="og:image" content="assets/img/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Tailwind CDN (Play) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: { colors: { brand: { DEFAULT: '#1a3a6e', dark: '#0f2547', light: '#2d5495', accent: '#c9a227' } } } }
+  };
+</script>
+
+<!-- Alpine.js -->
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+<link rel="stylesheet" href="assets/css/custom.css" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a3a6e'/%3E%3Ctext x='50' y='65' text-anchor='middle' fill='%23c9a227' font-size='52' font-weight='700' font-family='Inter,sans-serif'%3EM%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<nav class="navbar">
+  <div class="container-narrow flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2 font-bold text-lg" style="color:var(--color-primary-dark)">
+      <span class="inline-flex w-9 h-9 rounded-lg items-center justify-center text-white" style="background:linear-gradient(135deg,#1a3a6e,#c9a227)">M</span>
+      <span class="hidden sm:inline">Manit Asanok</span>
+    </a>
+    <div class="hidden md:flex items-center gap-1">
+      <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+      <a href="publications.html" class="nav-link" data-i18n="nav.publications">Publications</a>
+      <a href="teaching.html" class="nav-link" data-i18n="nav.teaching">Teaching</a>
+      <a href="news.html" class="nav-link" data-i18n="nav.news">News</a>
+      <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+      <button data-i18n-toggle class="ml-3 px-3 py-1.5 rounded-md text-sm font-semibold border" style="border-color:var(--color-primary);color:var(--color-primary)">TH / EN</button>
+    </div>
+    <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Menu">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </div>
+  <div id="mobile-menu" class="md:hidden hidden border-t" style="border-color:var(--color-border);background:white">
+    <div class="container-narrow py-3 flex flex-col gap-1">
+      <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+      <a href="publications.html" class="nav-link" data-i18n="nav.publications">Publications</a>
+      <a href="teaching.html" class="nav-link" data-i18n="nav.teaching">Teaching</a>
+      <a href="news.html" class="nav-link" data-i18n="nav.news">News</a>
+      <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+      <button data-i18n-toggle class="text-left nav-link">🌐 TH / EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<section class="hero-gradient">
+  <div class="container-narrow section-pad">
+    <div class="grid md:grid-cols-5 gap-10 items-center">
+      <div class="md:col-span-2 flex justify-center md:justify-start">
+        <div class="profile-ring">
+          <div class="w-56 h-56 md:w-64 md:h-64 rounded-full bg-white flex items-center justify-center overflow-hidden text-7xl font-bold" style="color:var(--color-primary)">
+            <img src="assets/img/profile.jpg" alt="Dr. Manit Asanok" class="w-full h-full object-cover rounded-full" onerror="this.style.display='none';this.parentElement.innerHTML='M';" />
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-3">
+        <p id="hero-position" class="text-sm font-semibold tracking-wider uppercase mb-3" style="color:var(--color-accent)"></p>
+        <h1 id="hero-name" class="text-4xl md:text-5xl mb-4 leading-tight"></h1>
+        <p id="hero-dept" class="text-lg mb-2 text-muted"></p>
+        <p id="hero-tagline" class="text-base mb-6 leading-relaxed"></p>
+        <div class="flex flex-wrap gap-3 mb-6">
+          <a href="assets/docs/CV_Manit_Asanok.pdf" class="btn-primary" download>
+            <i data-lucide="download" class="w-5 h-5"></i>
+            <span data-i18n="hero.downloadCV">Download CV</span>
+          </a>
+          <a href="publications.html" class="btn-outline">
+            <i data-lucide="book-open" class="w-5 h-5"></i>
+            <span data-i18n="hero.viewPublications">View Publications</span>
+          </a>
+        </div>
+        <div>
+          <p class="text-xs uppercase font-semibold tracking-wider mb-2 text-muted" data-i18n="hero.researchInterests">Research Interests</p>
+          <div id="hero-keywords" class="flex flex-wrap"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Quick Stats ===== -->
+<section class="bg-white border-y" style="border-color:var(--color-border)">
+  <div class="container-narrow py-10">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <a id="stat-scopus" href="#" target="_blank" rel="noopener" class="card card-interactive p-5 text-center block">
+        <p class="text-xs uppercase tracking-wider text-muted mb-1" data-i18n="stats.scopus">Scopus Author ID</p>
+        <p class="text-xl font-bold text-primary" id="stat-scopus-val"></p>
+        <p class="text-xs text-muted mt-1">View profile →</p>
+      </a>
+      <a id="stat-orcid" href="#" target="_blank" rel="noopener" class="card card-interactive p-5 text-center block">
+        <p class="text-xs uppercase tracking-wider text-muted mb-1" data-i18n="stats.orcid">ORCID iD</p>
+        <p class="text-base font-bold text-primary" id="stat-orcid-val"></p>
+        <p class="text-xs text-muted mt-1">View profile →</p>
+      </a>
+      <a id="stat-adidx" href="#" target="_blank" rel="noopener" class="card card-interactive p-5 text-center block">
+        <p class="text-xs uppercase tracking-wider text-muted mb-1" data-i18n="stats.adIndex">AD Scientific Index</p>
+        <p class="text-xl font-bold text-primary" id="stat-adidx-val"></p>
+        <p class="text-xs text-muted mt-1">View profile →</p>
+      </a>
+      <a href="publications.html" class="card card-interactive p-5 text-center block">
+        <p class="text-xs uppercase tracking-wider text-muted mb-1" data-i18n="stats.publications">Publications</p>
+        <p class="text-xl font-bold text-primary" id="stat-pub-count">—</p>
+        <p class="text-xs text-muted mt-1">View all →</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section id="about" class="section-pad">
+  <div class="container-narrow">
+    <div class="grid md:grid-cols-3 gap-10">
+      <div>
+        <div class="section-divider"></div>
+        <h2 class="text-3xl mb-3" data-i18n="sections.about">About</h2>
+      </div>
+      <div id="about-bio" class="md:col-span-2 space-y-4 text-base leading-relaxed"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Education ===== -->
+<section class="section-pad bg-white border-y" style="border-color:var(--color-border)">
+  <div class="container-narrow">
+    <div class="section-divider"></div>
+    <h2 class="text-3xl mb-8" data-i18n="sections.education">Education</h2>
+    <div id="education-list" class="space-y-5"></div>
+  </div>
+</section>
+
+<!-- ===== Positions ===== -->
+<section class="section-pad">
+  <div class="container-narrow">
+    <div class="section-divider"></div>
+    <h2 class="text-3xl mb-8" data-i18n="sections.positions">Positions & Experience</h2>
+    <div id="positions-list" class="space-y-3"></div>
+  </div>
+</section>
+
+<!-- ===== Awards ===== -->
+<section class="section-pad bg-white border-y" style="border-color:var(--color-border)">
+  <div class="container-narrow">
+    <div class="section-divider"></div>
+    <h2 class="text-3xl mb-8" data-i18n="sections.awards">Awards & Scholarships</h2>
+    <div id="awards-list" class="grid md:grid-cols-2 gap-4"></div>
+  </div>
+</section>
+
+<!-- ===== Training ===== -->
+<section class="section-pad">
+  <div class="container-narrow">
+    <div class="section-divider"></div>
+    <h2 class="text-3xl mb-8" data-i18n="sections.training">Professional Training</h2>
+    <div id="training-list" class="grid md:grid-cols-2 gap-4"></div>
+  </div>
+</section>
+
+<!-- ===== Featured Publications ===== -->
+<section class="section-pad bg-white border-y" style="border-color:var(--color-border)">
+  <div class="container-narrow">
+    <div class="flex items-end justify-between mb-8">
+      <div>
+        <div class="section-divider"></div>
+        <h2 class="text-3xl" data-i18n="sections.featuredPublications">Recent Publications</h2>
+      </div>
+      <a href="publications.html" class="text-sm font-semibold text-primary hover:underline">
+        <span data-i18n="sections.viewAll">View all</span> →
+      </a>
+    </div>
+    <div id="featured-pubs" class="space-y-3"></div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer id="site-footer" style="background:var(--color-primary-dark);color:white"></footer>
+
+<!-- ===== Scripts ===== -->
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  // Populate index page after profile + i18n load
+  (async () => {
+    if (window.i18n) await window.i18n.init();
+    const profile = await loadProfile();
+    const lang = window.i18n.lang;
+
+    document.getElementById('hero-position').textContent = window.i18n.pick(profile.position);
+    document.getElementById('hero-name').textContent = window.i18n.pick(profile.name);
+    document.getElementById('hero-dept').textContent = window.i18n.pick(profile.department) + ' · ' + window.i18n.pick(profile.institution);
+    document.getElementById('hero-tagline').textContent = window.i18n.pick(profile.tagline);
+
+    const kw = document.getElementById('hero-keywords');
+    kw.innerHTML = profile.keywords.map(k => `<span class="chip">${k}</span>`).join('');
+
+    const stats = profile.identifiers;
+    document.getElementById('stat-scopus').href = stats.scopusUrl;
+    document.getElementById('stat-scopus-val').textContent = stats.scopusId;
+    document.getElementById('stat-orcid').href = stats.orcidUrl;
+    document.getElementById('stat-orcid-val').textContent = stats.orcid;
+    document.getElementById('stat-adidx').href = stats.adScientificUrl;
+    document.getElementById('stat-adidx-val').textContent = stats.adScientificIndex;
+
+    const bio = document.getElementById('about-bio');
+    bio.innerHTML = (window.i18n.pick(profile.bio) || []).map(p => `<p>${p}</p>`).join('');
+
+    const eduList = document.getElementById('education-list');
+    eduList.innerHTML = profile.education.map(e => `
+      <div class="card p-5">
+        <div class="flex flex-wrap items-baseline justify-between gap-2 mb-2">
+          <h3 class="text-lg">${window.i18n.pick(e.level)} — ${e.degree}</h3>
+          <span class="text-sm font-semibold text-accent">${lang === 'en' ? e.yearEn : e.year}</span>
+        </div>
+        <p class="text-sm mb-1"><strong>${window.i18n.pick(e.major)}</strong></p>
+        <p class="text-sm text-muted">${window.i18n.pick(e.institution)}</p>
+        ${e.thesis ? `<p class="text-sm mt-2 italic text-muted">${lang === 'th' ? 'วิทยานิพนธ์:' : 'Thesis:'} ${window.i18n.pick(e.thesis)}</p>` : ''}
+        ${e.scholarship ? `<p class="text-xs mt-2 text-accent">★ ${window.i18n.pick(e.scholarship)}</p>` : ''}
+      </div>
+    `).join('');
+
+    const posList = document.getElementById('positions-list');
+    posList.innerHTML = profile.positions.slice().reverse().map(p => `
+      <div class="flex gap-4 p-4 card">
+        <div class="shrink-0 w-28 text-sm font-semibold text-accent">${lang === 'en' ? p.yearEn : p.year}</div>
+        <div>
+          <p class="font-semibold">${window.i18n.pick(p.title)}</p>
+          <p class="text-sm text-muted">${window.i18n.pick(p.org)}</p>
+        </div>
+      </div>
+    `).join('');
+
+    const awardsList = document.getElementById('awards-list');
+    awardsList.innerHTML = profile.awards.map(a => `
+      <div class="card p-4">
+        <div class="flex items-baseline justify-between mb-1">
+          <span class="text-xs font-bold text-accent">${lang === 'en' ? a.yearEn : a.year}</span>
+        </div>
+        <p class="text-sm font-medium">${window.i18n.pick(a.title)}</p>
+        ${a.by ? `<p class="text-xs text-muted mt-1">${window.i18n.pick(a.by)}</p>` : ''}
+      </div>
+    `).join('');
+
+    const trList = document.getElementById('training-list');
+    trList.innerHTML = profile.training.map(t => `
+      <div class="card p-4">
+        <p class="text-sm font-medium">${window.i18n.pick(t.title)}</p>
+        ${t.by ? `<p class="text-xs text-muted mt-1">— ${window.i18n.pick(t.by)}</p>` : ''}
+      </div>
+    `).join('');
+
+    // Featured publications (latest 5)
+    try {
+      const pubRes = await fetch('data/publications.json');
+      const pubs = await pubRes.json();
+      document.getElementById('stat-pub-count').textContent = pubs.length;
+      const sorted = pubs.slice().sort((a, b) => b.year - a.year).slice(0, 5);
+      const featured = document.getElementById('featured-pubs');
+      featured.innerHTML = sorted.map(p => renderPubCard(p, lang)).join('');
+    } catch (e) {
+      console.warn('publications.json not yet available', e);
+    }
+
+    if (window.lucide) lucide.createIcons();
+  })();
+
+  function renderPubCard(p, lang) {
+    const typeClass = {
+      international: 'is-international',
+      national: 'is-national',
+      conference: 'is-conference',
+      academic: 'is-academic',
+      book: 'is-book'
+    }[p.type] || '';
+    const badgeClass = {
+      international: 'badge-scopus',
+      national: 'badge-tci',
+      conference: 'badge-conf',
+      academic: 'badge-academic',
+      book: 'badge-book'
+    }[p.type] || '';
+    const badgeLabel = {
+      international: 'Scopus',
+      national: 'TCI',
+      conference: 'Conference',
+      academic: 'Academic',
+      book: 'Book'
+    }[p.type] || p.type;
+    const title = window.i18n.pick(p.title);
+    const authors = (p.authors || []).join(', ');
+    const venue = p.venue || '';
+    const vol = p.volume ? `, ${p.volume}` : '';
+    const iss = p.issue ? `(${p.issue})` : '';
+    const pages = p.pages ? `, ${p.pages}` : '';
+    const links = [];
+    if (p.doi) links.push(`<a href="https://doi.org/${p.doi}" target="_blank" rel="noopener" class="text-xs font-semibold text-primary hover:underline">DOI ↗</a>`);
+    if (p.url) links.push(`<a href="${p.url}" target="_blank" rel="noopener" class="text-xs font-semibold text-primary hover:underline">Link ↗</a>`);
+    if (p.pdf) links.push(`<a href="${p.pdf}" target="_blank" rel="noopener" class="text-xs font-semibold text-primary hover:underline">PDF ↗</a>`);
+    return `
+      <div class="pub-card ${typeClass}">
+        <div class="flex items-start justify-between gap-3 mb-2">
+          <span class="badge ${badgeClass}">${badgeLabel}</span>
+          <span class="text-xs font-semibold text-muted">${p.year}</span>
+        </div>
+        <p class="font-semibold mb-1 leading-snug">${title}</p>
+        <p class="text-sm text-muted leading-snug">${authors} (${p.year}). <em>${venue}</em>${vol}${iss}${pages}.</p>
+        ${links.length ? `<div class="mt-2 flex gap-3">${links.join('')}</div>` : ''}
+      </div>
+    `;
+  }
+  window.renderPubCard = renderPubCard;
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+{
+  "courses": [
+    {
+      "level": { "th": "ปริญญาตรี", "en": "Undergraduate" },
+      "title": {
+        "th": "เทคโนโลยีสิ่งอำนวยความสะดวกสำหรับเด็กบกพร่องทางการเรียนรู้",
+        "en": "Assistive Technology for Children with Learning Disabilities"
+      },
+      "program": {
+        "th": "กศ.บ. เทคโนโลยีการศึกษาและคอมพิวเตอร์ศึกษา",
+        "en": "B.Ed. Educational Technology and Computer Education"
+      }
+    },
+    {
+      "level": { "th": "ปริญญาตรี", "en": "Undergraduate" },
+      "title": {
+        "th": "การออกแบบและพัฒนานวัตกรรมการเรียนรู้",
+        "en": "Design and Development of Learning Innovation"
+      },
+      "program": {
+        "th": "กศ.บ. เทคโนโลยีการศึกษาและคอมพิวเตอร์ศึกษา",
+        "en": "B.Ed. Educational Technology and Computer Education"
+      }
+    },
+    {
+      "level": { "th": "ปริญญาตรี", "en": "Undergraduate" },
+      "title": {
+        "th": "การบูรณาการเทคโนโลยีในรายวิชาเพื่อพัฒนาสมรรถนะไอซีทีของนักศึกษาครู",
+        "en": "Technology Integration Methods for Pre-service Teachers' ICT Competency"
+      },
+      "program": {
+        "th": "กศ.บ. เทคโนโลยีการศึกษาและคอมพิวเตอร์ศึกษา",
+        "en": "B.Ed. Educational Technology and Computer Education"
+      }
+    },
+    {
+      "level": { "th": "ปริญญาโท / เอก", "en": "Graduate" },
+      "title": {
+        "th": "เทคโนโลยีและสื่อสารการศึกษาขั้นสูง (Advanced Educational Technology)",
+        "en": "Advanced Educational Technology and Communications"
+      },
+      "program": {
+        "th": "กศ.ม./ปร.ด. เทคโนโลยีและสื่อสารการศึกษา",
+        "en": "M.Ed./Ph.D. Educational Technology and Communications"
+      }
+    },
+    {
+      "level": { "th": "ปริญญาโท / เอก", "en": "Graduate" },
+      "title": {
+        "th": "การวิจัยทางเทคโนโลยีการศึกษา (Research in Educational Technology)",
+        "en": "Research in Educational Technology"
+      },
+      "program": {
+        "th": "กศ.ม./ปร.ด. เทคโนโลยีและสื่อสารการศึกษา",
+        "en": "M.Ed./Ph.D. Educational Technology and Communications"
+      }
+    }
+  ],
+  "advisingNotes": {
+    "th": "รายชื่อนิสิตที่ปรึกษาวิทยานิพนธ์ดึงอัตโนมัติจากบทความวิจัยที่ตีพิมพ์ร่วมกับนิสิต (TCI/Conference) — เรียงตามปีล่าสุด",
+    "en": "Thesis advisees are auto-extracted from co-authored publications (TCI/Conference) — sorted by year (most recent first)"
+  }
+}

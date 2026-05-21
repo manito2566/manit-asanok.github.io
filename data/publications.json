@@ -1,0 +1,833 @@
+[
+  {
+    "id": "erawan-2026-kirkpatrick",
+    "type": "international",
+    "year": 2026,
+    "authors": ["Erawan, W.", "Asanok, M.", "Erawan, P."],
+    "title": { "en": "Evaluating a professional and quality of life development program for beginning rural teachers in Thailand by Kirkpatrick's Model" },
+    "venue": "Australian and International Journal of Rural Education",
+    "pages": "1–23",
+    "url": "https://journal.spera.asn.au/index.php/AIJRE/article/view/851",
+    "indexed": ["Scopus"]
+  },
+  {
+    "id": "rangsri-2025-peer-aesthetic",
+    "type": "international",
+    "year": 2025,
+    "authors": ["Rangsriborwornkul, S.", "Asanok, M."],
+    "title": { "en": "Effects of the peer-assisted aesthetic learning model using multimedia to enhance undergraduate students' songwriting skills for children's songs" },
+    "venue": "Shanlax International Journal of Education",
+    "volume": "13",
+    "issue": "3",
+    "pages": "73-81",
+    "indexed": ["Scopus"]
+  },
+  {
+    "id": "rangsri-2025-songwriting-needs",
+    "type": "international",
+    "year": 2025,
+    "authors": ["Rangsriborwornkul, S.", "Asanok, M."],
+    "title": { "en": "A study on the situations, problems, and needs of teaching and learning in higher education to enhance songwriting skills for children's songs" },
+    "venue": "Higher Education Studies",
+    "volume": "15",
+    "issue": "3",
+    "pages": "251–261",
+    "doi": "10.5539/hes.v15n3p251",
+    "indexed": ["Scopus"]
+  },
+  {
+    "id": "arnan-2024-boardgame",
+    "type": "international",
+    "year": 2024,
+    "authors": ["Arnanteerakul, A.", "Asanok, M."],
+    "title": { "en": "Development of experiential learning model using board games to enhance strategic thinking for undergraduate students" },
+    "venue": "Nanotechnology Perceptions",
+    "volume": "20",
+    "issue": "S8",
+    "pages": "806-820",
+    "indexed": ["Scopus"]
+  },
+  {
+    "id": "wongs-2024-makerspace",
+    "type": "international",
+    "year": 2024,
+    "authors": ["Wongsripuak, P.", "Asanok, M.", "Hoksuwan, S."],
+    "title": { "en": "Development of the learning environment model of makerspace for promoting students' creativity in a vocational college under the Vocational Education Commission" },
+    "venue": "Nanotechnology Perceptions",
+    "volume": "20",
+    "issue": "S7",
+    "pages": "1052-1065",
+    "indexed": ["Scopus"]
+  },
+  {
+    "id": "weeranakin-2021-ai-rice",
+    "type": "conference",
+    "year": 2021,
+    "authors": ["Weeranakin, N.", "Thienmongkol, R.", "Zatun, S.", "Raksong, O.", "Asanok, M."],
+    "title": { "en": "An artificial intelligence instructional system to promote learning on rice farming basing on the philosophy of sufficiency economy for farmers in the Upper Northeastern Thailand" },
+    "venue": "2021 6th International Conference on Communication, Image and Signal Processing (CCISP)",
+    "pages": "46-50",
+    "doi": "10.1109/CCISP52774.2021.9639290",
+    "indexed": ["IEEE", "Scopus"]
+  },
+  {
+    "id": "weeranakin-2019-ai-rice-farming",
+    "type": "international",
+    "year": 2019,
+    "authors": ["Weeranakin, N.", "Raksong, O.", "Charton, C.", "Saitong, P.", "Asanok, M."],
+    "title": { "en": "Model of artificial intelligence system to promote learning about rice farming according to philosophy of the sufficiency economy for farmers in the upper northeast" },
+    "venue": "Research Journal of Applied Sciences",
+    "volume": "14",
+    "issue": "10",
+    "pages": "350-357",
+    "indexed": ["Scopus"]
+  },
+  {
+    "id": "asanok-2016-coaching-mentoring",
+    "type": "international",
+    "year": 2016,
+    "authors": ["Asanok, M.", "Chookhampaeng, C."],
+    "title": { "en": "Coaching and mentoring model based on teachers' professional development for enhancing their teaching competency in schools (Thailand) using videotape" },
+    "venue": "Educational Research and Reviews",
+    "volume": "11",
+    "issue": "4",
+    "pages": "134-140",
+    "indexed": ["Scopus"]
+  },
+  {
+    "id": "tritrakan-2016-engineering",
+    "type": "international",
+    "year": 2016,
+    "authors": ["Tritrakan, K.", "Kidrakarn, P.", "Asanok, M."],
+    "title": { "en": "The use of engineering design concept for computer programming courses: A model of blended learning environment" },
+    "venue": "Educational Research and Reviews",
+    "volume": "11",
+    "issue": "18",
+    "pages": "1757-1765",
+    "indexed": ["Scopus"]
+  },
+  {
+    "id": "sassuvun-2013-socialmedia",
+    "type": "international",
+    "year": 2013,
+    "authors": ["Sassuvun, K.", "Kidrakarn, P.", "Asanok, M."],
+    "title": { "en": "The development of a social media environmental learning model with task-based learning to promote the public consciousness of Mathayomsuksa students" },
+    "venue": "The Journal of Human Resource and Adult Learning",
+    "volume": "9",
+    "issue": "2",
+    "pages": "15-30"
+  },
+  {
+    "id": "asanok-2008-multimedia-elearning",
+    "type": "international",
+    "year": 2008,
+    "authors": ["Asanok, M.", "Kidrakan, P.", "Brahmaworn, C."],
+    "title": { "en": "Building critical components for successful multimedia-based collaborative e-learning design framework" },
+    "venue": "International Journal of the Computer, the Internet and Management (IJCIM)",
+    "volume": "16",
+    "issue": "SP3",
+    "pages": "37.1-37.10"
+  },
+
+  {
+    "id": "thabcha-2024-learning-together",
+    "type": "national",
+    "year": 2024,
+    "authors": ["Thabcha, K.", "Asanok, M."],
+    "title": {
+      "th": "การพัฒนาผลสัมฤทธิ์ทางการเรียนและทักษะการทำงานเป็นทีมในรายวิชาสังคมศึกษา ศาสนา และวัฒนธรรม โดยใช้กิจกรรมการเรียนรู้แบบร่วมมือเทคนิค Learning Together สำหรับนักเรียนชั้นประถมศึกษาปีที่ 2",
+      "en": "The development of learning achievement and teamwork skills in social studies, religion and culture courses by organizing cooperative learning activities using the Learning Together technique for Prathomsuksa 2 students"
+    },
+    "venue": "Journal of Education Rajabhat Maha Sarakham University",
+    "volume": "21",
+    "issue": "3",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "bunsamon-2024-synectics",
+    "type": "national",
+    "year": 2024,
+    "authors": ["Bunsamon, T.", "Asanok, M."],
+    "title": {
+      "th": "การพัฒนาทักษะการคิดวิเคราะห์และผลสัมฤทธิ์ทางการเรียนโดยใช้รูปแบบการสอน Synectics ร่วมกับการจัดการเรียนรู้ด้วยแผนผังความคิด รายวิชาสังคมศึกษาฯ เรื่องเศรษฐกิจในชีวิตประจำวัน ชั้นประถมศึกษาปีที่ 4",
+      "en": "The development of analytical thinking skills and learning achievement using synectics instructional model with mind mapping learning management in social studies, religion and culture courses on economics in daily life for Prathomsuksa 4 students"
+    },
+    "venue": "Journal of Education Rajabhat Maha Sarakham University",
+    "volume": "21",
+    "issue": "3",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "budken-2024-5w1h",
+    "type": "national",
+    "year": 2024,
+    "authors": ["Budken, P.", "Asanok, M."],
+    "title": {
+      "th": "การพัฒนาความสามารถในการคิดวิเคราะห์ของนักเรียนชั้นประถมศึกษาปีที่ 6 ในรายวิชาสังคมศึกษา ด้วยเทคนิค 5W1H ร่วมกับ Mind Map",
+      "en": "Enhancing analytical thinking abilities in grade 6 social studies: A study on the efficacy of 5W1H techniques combined with mind maps"
+    },
+    "venue": "Journal of Roi Kaensarn Academi",
+    "volume": "9",
+    "issue": "12",
+    "pages": "75–86",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "preedok-2024-blended-pbl",
+    "type": "national",
+    "year": 2024,
+    "authors": ["Preedok, P.", "Asanok, M."],
+    "title": {
+      "th": "การพัฒนาการจัดการเรียนรู้แบบผสมผสานโดยใช้ปัญหาเป็นฐาน เพื่อส่งเสริมความสามารถในการแก้ปัญหาและผลสัมฤทธิ์ทางการเรียนของนิสิตปริญญาตรี",
+      "en": "Development of blended problem-based learning to enhance problem-solving ability and academic achievement of undergraduate students"
+    },
+    "venue": "Journal for Developing the Social and Community",
+    "volume": "11",
+    "issue": "2",
+    "pages": "405-420",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "inthraram-2024-pbl-webinstr",
+    "type": "national",
+    "year": 2024,
+    "authors": ["Inthraram, C.", "Asanok, M."],
+    "title": {
+      "th": "การพัฒนาบทเรียนบนเว็บแบบใช้ปัญหาเป็นฐาน เพื่อส่งเสริมทักษะการแก้ปัญหา รายวิชาวิทยาการคำนวณและออกแบบเทคโนโลยี สำหรับนักเรียนชั้นประถมศึกษาปีที่ 6",
+      "en": "The development of web-based instruction based-on problem-based learning that promotes problem-solving skills on computation and design technology subject for grade 6 students"
+    },
+    "venue": "Journal of Educational Technology and Communications, Faculty of Education Mahasarakham University (JETC)",
+    "volume": "7",
+    "issue": "21",
+    "pages": "143-152",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "subin-2023-onet",
+    "type": "national",
+    "year": 2023,
+    "authors": ["Subin, K.", "Asanok, M."],
+    "title": {
+      "th": "การพัฒนาระบบสารสนเทศวิชาการเพื่อการเปรียบเทียบผลสอบ O-NET",
+      "en": "The development of academic information system for benchmarking on the Ordinary National Education Test (O-NET)"
+    },
+    "venue": "Journal of Educational Technology and Communications, Faculty of Education Mahasarakham University",
+    "volume": "6",
+    "issue": "17",
+    "pages": "80-90",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "metta-2022-sufficiency",
+    "type": "national",
+    "year": 2022,
+    "authors": ["Metta, P.", "Asanok, M."],
+    "title": {
+      "th": "การพัฒนาแนวทางการบริหารโรงเรียนตามหลักปรัชญาเศรษฐกิจพอเพียง สำหรับโรงเรียนสังกัด สพป.มุกดาหาร",
+      "en": "The development of guidelines for school management according to sufficiency economy philosophy for schools under the office of Mukdahan primary educational service area"
+    },
+    "venue": "Academic Journal of Mahamakut Buddhist University Roi Et Campus",
+    "volume": "11",
+    "issue": "1",
+    "pages": "449-463",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "boonrak-2022-studentcouncil",
+    "type": "national",
+    "year": 2022,
+    "authors": ["Boonrak, B.", "Asanok, M."],
+    "title": {
+      "th": "การพัฒนาแนวทางการบริหารกิจกรรมสภานักเรียน สังกัด สพป.สกลนคร เขต 3",
+      "en": "Developing the student council's activities administration guidelines for schools under the office of Sakon Nakhon primary educational service area 3"
+    },
+    "venue": "Academic Journal of Mahamakut Buddhist University Roi Et Campus",
+    "volume": "11",
+    "issue": "1",
+    "pages": "494-508",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "klinsrisuk-2021-studentcare",
+    "type": "national",
+    "year": 2021,
+    "authors": ["Klinsrisuk, P.", "Asanok, M."],
+    "title": {
+      "th": "การพัฒนาระบบดูแลช่วยเหลือนักเรียน สำหรับโรงเรียน สพม.22 จังหวัดนครพนม",
+      "en": "The development of student care and support system management for schools under the Secondary Educational Service Area Office 22 Nakhon Phanom Province"
+    },
+    "venue": "Journal of Educational Technology and Communications, Faculty of Education Mahasarakham University",
+    "volume": "4",
+    "issue": "10",
+    "pages": "147-157",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "jantarasena-2020-blended-visual",
+    "type": "national",
+    "year": 2020,
+    "authors": ["Jantarasena, V.", "Asanok, M."],
+    "title": {
+      "th": "ผลของการเรียนแบบผสมผสานด้วย Visual Programming เพื่อส่งเสริม Computational Thinking ผลสัมฤทธิ์ และความสามารถในการเขียนโปรแกรม ชั้นประถมศึกษาปีที่ 4",
+      "en": "The effects of blended learning using visual programming to promote computational thinking, learning achievement, and programming ability for primary 4 students"
+    },
+    "venue": "Journal of Legal Entity Management and Local Innovation",
+    "volume": "6",
+    "issue": "2",
+    "pages": "1-13",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "jantarasena-2020-blended-composition",
+    "type": "national",
+    "year": 2020,
+    "authors": ["Jantarasena, V.", "Asanok, M."],
+    "title": {
+      "th": "การประเมินองค์ประกอบของการเรียนแบบผสมผสาน Visual Programming เพื่อส่งเสริม Computational Thinking ชั้น ป.4",
+      "en": "Composition evaluation of blended learning using visual programming to promote computational thinking for primary 4 students"
+    },
+    "venue": "Journal of Graduate Research",
+    "volume": "11",
+    "issue": "1",
+    "pages": "43-54",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "asanok-2019-dyslexic-mobile",
+    "type": "national",
+    "year": 2019,
+    "authors": ["Asanok, M.", "Changpetch, C.", "Sukthong, N.", "Namkhun, S."],
+    "title": {
+      "th": "การพัฒนาโมบายแอพพลิเคชันช่วยส่งเสริมการเรียนรู้ของเด็กที่มีความบกพร่องด้านการอ่าน: การประเมินเบื้องต้น",
+      "en": "Assistive mobile application development to enhancing learning performance of dyslexic children: Preliminary evaluation"
+    },
+    "venue": "Rajabhat Maha Sarakham University Journal of Engineering",
+    "volume": "3",
+    "issue": "2",
+    "pages": "35-41",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "thammakitjawat-2019-creative-leader",
+    "type": "national",
+    "year": 2019,
+    "authors": ["Thammakitjawat, K.", "Asanok, M."],
+    "title": {
+      "th": "การพัฒนาโปรแกรมเสริมสร้างภาวะผู้นำเชิงสร้างสรรค์ของผู้บริหารโรงเรียนเอกชน สำนักงานการศึกษาเอกชน จ.บุรีรัมย์",
+      "en": "The development of the programs to enhance a creative leadership of school administrators in the private education under Buriram provincial office"
+    },
+    "venue": "Academic Journal of Humanities and Social Sciences Buriram Rajabhat University",
+    "volume": "11",
+    "issue": "2",
+    "pages": "1-18",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "chindarit-2019-bbl",
+    "type": "national",
+    "year": 2019,
+    "authors": ["Chindarit, N.", "Asanok, M.", "Chantarajit, N."],
+    "title": {
+      "th": "การพัฒนาความพร้อมทางวิทยาศาสตร์และความฉลาดทางอารมณ์ของเด็กปฐมวัยระดับชั้นอนุบาล 2 โดยใช้การจัดการเรียนรู้แบบ Brain-based Learning",
+      "en": "Development the scientific readiness and the emotional intelligence of kindergartner level two by learning management using brain-based learning"
+    },
+    "venue": "Buabandit Journal of Educational Administration",
+    "volume": "19",
+    "issue": "2",
+    "pages": "353-367",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "sanwa-2019-7e",
+    "type": "national",
+    "year": 2019,
+    "authors": ["Sanwa, B.", "Asanok, M.", "Chantarajit, N."],
+    "title": {
+      "th": "การศึกษาผลสัมฤทธิ์ทางการเรียน การคิดวิเคราะห์ และเจตคติของนักเรียนชั้น ป.5 โดยใช้การสืบเสาะหาความรู้แบบ 7E",
+      "en": "A study of learning achievement, analytic thinking, and attitudes towards learning of Prathomsuksa 5 students using 7E learning inquiry method"
+    },
+    "venue": "Buabandit Journal of Educational Administration",
+    "volume": "19",
+    "issue": "2",
+    "pages": "369-381",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "thmkitchawat-2019-private-instruction",
+    "type": "national",
+    "year": 2019,
+    "authors": ["Thmkitchawat, N.", "Asanok, M."],
+    "title": {
+      "th": "การพัฒนาแนวทางการจัดการเรียนการสอนของสถานศึกษาเอกชน สำนักงานการศึกษาเอกชน จ.บุรีรัมย์",
+      "en": "Developing guidelines for instruction of the private education institutions under Buriram provincial education office"
+    },
+    "venue": "Academic Journal of Buriram Rajabhat University",
+    "volume": "12",
+    "issue": "1",
+    "pages": "1-18",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "kaso-2019-gamification-excel",
+    "type": "national",
+    "year": 2019,
+    "authors": ["Kaso, T.", "Asanok, M.", "Thawornrueangrit, J."],
+    "title": {
+      "th": "การศึกษาผลสัมฤทธิ์ทางการเรียน Microsoft Excel 2013 ด้วยการเรียนแบบ e-Learning รูปแบบ Gamification ของนักเรียนชั้น ป.5",
+      "en": "A study learning achievement on Microsoft Excel 2013 using e-learning format gamification of Prathomsuksa 5 students"
+    },
+    "venue": "Journal of Educational Technology and Communications, Faculty of Education Mahasarakham University",
+    "volume": "2",
+    "issue": "5",
+    "pages": "112-120",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "nuttaro-2018-task-etraining",
+    "type": "national",
+    "year": 2018,
+    "authors": ["Nuttaro, W.", "Ruangsuwan, C.", "Asanok, M."],
+    "title": {
+      "th": "รูปแบบการฝึกอบรมอิเล็กทรอนิกส์เชิงงาน เพื่อเรียนรู้เรื่องการวิจัยในชั้นเรียน สำหรับครูในโรงเรียนประถมขนาดเล็ก",
+      "en": "A task-based e-training model to learn on classroom research for teachers in small sized primary school"
+    },
+    "venue": "Journal of Education, Mahasarakham University",
+    "volume": "12",
+    "issue": "3",
+    "pages": "129-143",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "mangkharat-2018-ar-english",
+    "type": "national",
+    "year": 2018,
+    "authors": ["Mangkharat, P.", "Asanok, M."],
+    "title": {
+      "th": "การพัฒนาชุดการเรียนแบบจำลองเพื่อเสริมสร้างทักษะภาษาอังกฤษด้วย Augmented Reality สำหรับนักเรียนชั้น ป.4",
+      "en": "Development of simulation learning package to enhance English skills by augmented reality for Prathomsuksa 4 student"
+    },
+    "venue": "Buabandit Journal of Educational Administration",
+    "volume": "18",
+    "issue": "2",
+    "pages": "187-198",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "suna-2018-webinstr-ict",
+    "type": "national",
+    "year": 2018,
+    "authors": ["Suna, S.", "Asanok, M.", "Seelamontree, P."],
+    "title": {
+      "th": "การพัฒนาบทเรียนบนเว็บ รายวิชาเทคโนโลยีสารสนเทศและการสื่อสาร 2 (ง 21102) ชั้น ม.1",
+      "en": "The development of a web-based instruction information technology and communication computer and technology 2 (D 21102) of Mathayomsuksa 1"
+    },
+    "venue": "Journal of Educational Technology and Communications, Faculty of Education Mahasarakham University",
+    "volume": "1",
+    "issue": "1",
+    "pages": "73-81",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "tumman-2018-research-system",
+    "type": "national",
+    "year": 2018,
+    "authors": ["Tumman, J.", "Asanok, M."],
+    "title": {
+      "th": "การศึกษาองค์ประกอบของระบบสารสนเทศเพื่อส่งเสริมงานวิจัยและบริการวิชาการ คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยราชภัฏมหาสารคาม",
+      "en": "A study on components of the information system for promoting research and academic services, faculty of information technology, Rajabhat Maha Sarakham University"
+    },
+    "venue": "Journal of Innovation Technology Management",
+    "volume": "5",
+    "issue": "1",
+    "pages": "122-132",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "tumman-2018-tam",
+    "type": "national",
+    "year": 2018,
+    "authors": ["Tumman, J.", "Asanok, M."],
+    "title": {
+      "th": "การพัฒนาระบบสารสนเทศเพื่อส่งเสริมการยอมรับเทคโนโลยีตามแบบจำลอง TAM ของงานวิจัยและบริการวิชาการ คณะเทคโนโลยีสารสนเทศ มรภ.มหาสารคาม",
+      "en": "The development information systems to encourage technology acceptance by TAM model for research and academic services faculty of information technology at Rajabhat Mahasarakham University"
+    },
+    "venue": "Journal of Project in Computer Science and Information Technology",
+    "volume": "4",
+    "issue": "2",
+    "pages": "17-26",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "tummachart-2018-pbl-c",
+    "type": "national",
+    "year": 2018,
+    "authors": ["Tummachart, W.", "Asanok, M."],
+    "title": {
+      "th": "การเปรียบเทียบผลสัมฤทธิ์ ความสามารถในการแก้ปัญหาและการคิดวิเคราะห์ ระหว่างการเรียนออนไลน์แบบ PBL และ WebQuest วิชาการเขียนโปรแกรมภาษา C ของนักเรียนชั้น ม.4",
+      "en": "Comparison of learning achievement, ability of solving problem and analytical thinking while study by online learning in type of problem-based learning and WebQuest on introduction to C programming language of high school education Mathayomsuksa 4 students"
+    },
+    "venue": "Journal of Education, Mahasarakham University",
+    "volume": "12",
+    "issue": "2",
+    "pages": "301-312",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "udkam-2018-coaching-supervision",
+    "type": "national",
+    "year": 2018,
+    "authors": ["Udkam, S.", "Asanok, M."],
+    "title": {
+      "th": "การพัฒนาแนวทางการ Coaching เพื่อการนิเทศของสำนักงานเขตพื้นที่การศึกษามัธยมศึกษา เขต 26",
+      "en": "Develop a coaching approach to supervision secondary educational service area office area 26"
+    },
+    "venue": "Journal of Educational Administration and Supervision",
+    "volume": "9",
+    "issue": "1",
+    "pages": "211-220",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "asanok-2017-coaching-video",
+    "type": "national",
+    "year": 2017,
+    "authors": ["Asanok, M.", "Chookhampaeng, C."],
+    "title": {
+      "th": "การโค้ชและการให้คำปรึกษาในกระบวนการพัฒนาวิชาชีพครูโดยใช้วิดีโอ เพื่อเสริมสร้างสมรรถนะการสอนในโรงเรียน",
+      "en": "Coaching and mentoring approaches in teacher professional development by using video for enhancing teaching competency in schools"
+    },
+    "venue": "Journal of Measurement Mahasarakham University",
+    "volume": "23",
+    "issue": "2",
+    "pages": "123-137",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "mungmai-2017-bankschool",
+    "type": "national",
+    "year": 2017,
+    "authors": ["Mungmai, B.", "Asanok, M."],
+    "title": {
+      "th": "แนวทางการพัฒนาการดำเนินงานธนาคารโรงเรียน สังกัด สพม. กลุ่มจังหวัด 'ร้อยแก่นสารสินธุ์'",
+      "en": "Development guideline the implementation of bank school under the secondary education service area office of 'Roi Kaen Sarn Sin' cluster provinces"
+    },
+    "venue": "Journal of Educational Administration and Supervision",
+    "volume": "8",
+    "issue": "2",
+    "pages": "55-64",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "tritrakan-2017-blended-engineering",
+    "type": "national",
+    "year": 2017,
+    "authors": ["Tritrakan, K.", "Kidrakarn, P.", "Asanok, M."],
+    "title": {
+      "th": "การพัฒนาและศึกษาการใช้รูปแบบสภาพแวดล้อมการเรียนรู้แบบผสมผสาน โดยใช้กิจกรรม Engineering Design Concept รายวิชาเขียนโปรแกรม สำหรับนิสิตปริญญาตรี มหาวิทยาลัยราชภัฏ",
+      "en": "Development and study the usage of blended learning environment model using engineering design concept learning activities to computer programming courses for undergraduate students of Rajabhat universities"
+    },
+    "venue": "Journal of Education, Mahasarakham University",
+    "volume": "11",
+    "issue": "1",
+    "pages": "46-59",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "searakote-2016-webquest",
+    "type": "national",
+    "year": 2016,
+    "authors": ["Searakote, N.", "Asanok, M.", "Weeranakin, N."],
+    "title": {
+      "th": "ผลของการใช้บทเรียน WebQuest ร่วมกับ WebBlog ที่ส่งเสริมความสามารถในการคิดวิเคราะห์ ในรายวิชาเทคโนโลยีสารสนเทศและการสื่อสาร ชั้น ม.3",
+      "en": "Results of application of web-based WebQuest lessons together with WebBlogs that promote critical thinking ability in the information technology and communication class for Mathayomsuksa 3"
+    },
+    "venue": "Journal of Measurement Mahasarakham University",
+    "volume": "22",
+    "issue": "2",
+    "pages": "118-128",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "munkong-2016-thesis-system",
+    "type": "national",
+    "year": 2016,
+    "authors": ["Munkong, P.", "Asanok, M."],
+    "title": {
+      "th": "การประเมินประสิทธิภาพและความพึงพอใจการใช้งานระบบสารสนเทศติดตามวิทยานิพนธ์ คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม",
+      "en": "Evaluate the effectiveness and satisfaction study of thesis tracking information system in faculty of education, Mahasarakham University"
+    },
+    "venue": "Journal of Measurement Mahasarakham University",
+    "volume": "22",
+    "issue": "1",
+    "pages": "183-190",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "kanpimai-2016-graphic-organizer",
+    "type": "national",
+    "year": 2016,
+    "authors": ["Kanpimai, S.", "Asanok, M."],
+    "title": {
+      "th": "การเปรียบเทียบผลสัมฤทธิ์ทางการเรียนและการคิดวิเคราะห์ ด้วยกิจกรรมการเรียนรู้แบบ Project-based ที่ใช้ Graphic Organizer ต่างกัน",
+      "en": "Comparison of academic achievement and analytical thinking using project-based learning activities with different graphic organizers"
+    },
+    "venue": "Journal of Education, Mahasarakham University",
+    "volume": "10",
+    "issue": "Special",
+    "pages": "833-850",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "phaphueng-2014-courseware-webpage",
+    "type": "national",
+    "year": 2014,
+    "authors": ["Phaphueng, W.", "Asanok, M.", "Weeranakin, N."],
+    "title": {
+      "th": "การเปรียบเทียบผลสัมฤทธิ์ ความสามารถในการแก้ปัญหา และการถ่ายโยงการเรียนรู้ ระหว่างคอร์สแวร์บูรณาการกับการสอนปกติ เรื่องการสร้างเว็บเพจ นักเรียน ปวช.2 สาขาคอมพิวเตอร์ธุรกิจ",
+      "en": "A comparison of learning achievement: Problem-solving ability and learning transfer between the integrated courseware and the regular instruction regarding to webpage creation in vocational education program second year students majoring in business computer"
+    },
+    "venue": "Chophayom Journal",
+    "volume": "24",
+    "pages": "43-60",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "timinkul-2014-pbl-web",
+    "type": "national",
+    "year": 2014,
+    "authors": ["Timinkul, W.", "Asanok, M.", "Chetragran, S."],
+    "title": {
+      "th": "ผลของการจัดกิจกรรมการเรียนรู้แบบ Integrated PBL ผ่านเว็บ ที่ส่งเสริมการคิดสร้างสรรค์ของนิสิตปริญญาตรี",
+      "en": "A comparison result of the learning activities using an integrated problem-based learning through the web-based instruction to encourage creative thinking for undergraduates student"
+    },
+    "venue": "Journal of Education, Mahasarakham University",
+    "volume": "8",
+    "issue": "4",
+    "pages": "120-131",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "weeranakin-2014-onlineagri",
+    "type": "national",
+    "year": 2014,
+    "authors": ["Weeranakin, N.", "Zatun, S.", "Asanok, M.", "Saitong, P."],
+    "title": {
+      "th": "การพัฒนารูปแบบศูนย์การเรียนรู้เกษตรออนไลน์ตามหลักเศรษฐกิจพอเพียง สำหรับยุวเกษตรกรในภาคตะวันออกเฉียงเหนือตอนบน",
+      "en": "The development of model of online agricultural learning center based on sufficiency economy for new generation agriculturists in the upper north eastern of Thailand"
+    },
+    "venue": "Journal of Education Research, Srinakharinwirot University",
+    "volume": "8",
+    "issue": "2",
+    "pages": "113-123",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "weeranakin-2015-rice-courseware",
+    "type": "national",
+    "year": 2015,
+    "authors": ["Weeranakin, N.", "Zatun, S.", "Raksong, O.", "Asanok, M.", "Saitong, P.", "Moolvilai, S."],
+    "title": {
+      "th": "การพัฒนาคอร์สแวร์มัลติมีเดียการทำนาข้าว สำหรับยุวเกษตรกรในประเทศไทย",
+      "en": "The multimedia courseware development of rice farming for young farmers in Thailand"
+    },
+    "venue": "Journal of Graduate School, Surindra Rajabhat University",
+    "volume": "9",
+    "issue": "1",
+    "pages": "112-118",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "weeranakin-2015-elearning-rice",
+    "type": "national",
+    "year": 2015,
+    "authors": ["Weeranakin, N.", "Zatun, S.", "Raksong, O.", "Asanok, M.", "Saitong, P.", "Moolvilai, S."],
+    "title": {
+      "th": "การพัฒนารูปแบบการเรียนอิเล็กทรอนิกส์การทำนาข้าว สำหรับยุวเกษตรกรในประเทศไทย",
+      "en": "Developing an e-learning model of rice farming for young farmers in Thailand"
+    },
+    "venue": "Kasetsart Educational Review",
+    "volume": "30",
+    "issue": "2",
+    "pages": "36-45",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "masasaiy-2013-ict-teacher",
+    "type": "national",
+    "year": 2013,
+    "authors": ["Masasaiy, S.", "Asanok, M.", "Samat, C."],
+    "title": {
+      "th": "การศึกษาสภาพปัญหาและความต้องการสมรรถนะของครูเทคโนโลยีสารสนเทศและการสื่อสาร ในโรงเรียนประถมศึกษาภาคตะวันออกเฉียงเหนือ",
+      "en": "The study of problems and needs assessment for competencies of information and communication technology teachers in primary school in Northeastern Thailand"
+    },
+    "venue": "Thammasat Journal",
+    "volume": "32",
+    "issue": "1",
+    "pages": "131-142",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "kidrakarn-2011-hot-webquest",
+    "type": "national",
+    "year": 2011,
+    "authors": ["Kidrakarn, P.", "Hogsuwan, S.", "Asanok, M.", "Thanaputama, H."],
+    "title": {
+      "th": "การพัฒนาทักษะการคิดขั้นสูงด้วยกิจกรรมการสอนแบบ WebQuest สำหรับนิสิตปริญญาตรี",
+      "en": "The development of higher order thinking skills using WebQuest instructional activities for undergraduate students"
+    },
+    "venue": "Journal of Administration and Development",
+    "volume": "3",
+    "issue": "1",
+    "pages": "47-62",
+    "indexed": ["TCI"]
+  },
+
+  {
+    "id": "asanok-2018-design-thinking",
+    "type": "academic",
+    "year": 2018,
+    "authors": ["มานิตย์ อาษานอก"],
+    "title": {
+      "th": "การบูรณาการกระบวนการคิดเชิงออกแบบเพื่อพัฒนานวัตกรรมการจัดการเรียนรู้",
+      "en": "Integrated Design Thinking for Instructional Innovation Development"
+    },
+    "venue": "วารสารเทคโนโลยีและสื่อสารการศึกษา คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม",
+    "volume": "1",
+    "issue": "1",
+    "pages": "6-12",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "asanok-2018-self-learning",
+    "type": "academic",
+    "year": 2018,
+    "authors": ["มานิตย์ อาษานอก"],
+    "title": {
+      "th": "การพัฒนาและหาประสิทธิภาพ ประสิทธิผลนวัตกรรมสำหรับเรียนรู้ด้วยตนเอง",
+      "en": "Development, Efficiency, and Effectiveness of Innovation for Self-learning Model"
+    },
+    "venue": "วารสารเทคโนโลยีและสื่อสารการศึกษา คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม",
+    "volume": "1",
+    "issue": "2",
+    "pages": "9-18",
+    "indexed": ["TCI"]
+  },
+  {
+    "id": "asanok-2016-ict-competency",
+    "type": "academic",
+    "year": 2016,
+    "authors": ["มานิตย์ อาษานอก"],
+    "title": {
+      "th": "รูปแบบการส่งเสริมสมรรถนะไอซีทีของนักศึกษาครูด้วยการบูรณาการเทคโนโลยีในรายวิชา",
+      "en": "Enhancing Student Teachers' ICT Competencies through Technology Integration Method Courses Model"
+    },
+    "venue": "วารสารครุศาสตร์ มหาวิทยาลัยราชภัฏมหาสารคาม",
+    "volume": "13",
+    "issue": "1",
+    "pages": "46-56",
+    "indexed": ["TCI"]
+  },
+
+  {
+    "id": "asanok-2017-assistive-tech-book",
+    "type": "book",
+    "year": 2017,
+    "authors": ["มานิตย์ อาษานอก"],
+    "title": {
+      "th": "เอกสารประกอบการสอน เทคโนโลยีสิ่งอำนวยความสะดวกสำหรับเด็กบกพร่องทางการเรียนรู้",
+      "en": "Assistive Technology for Children with Learning Disabilities (Teaching Document)"
+    },
+    "venue": "อภิชาติการพิมพ์, มหาสารคาม"
+  },
+  {
+    "id": "asanok-2011-edtech-paradigm",
+    "type": "book",
+    "year": 2011,
+    "authors": ["มานิตย์ อาษานอก", "รัชนีวรรณ ตั้งภักดี", "ก่อเกียรติ ขวัญสกุล"],
+    "title": {
+      "th": "พื้นฐานกระบวนทัศน์ทางเทคโนโลยีการศึกษา (บทใน 'พื้นฐานกระบวนทัศน์ทางการศึกษา')",
+      "en": "Foundations of Educational Technology Paradigm (chapter in 'Foundations of Educational Paradigm')"
+    },
+    "venue": "อภิชาติการพิมพ์, มหาสารคาม (พิมพ์ครั้งที่ 3)",
+    "pages": "110-122"
+  },
+  {
+    "id": "asanok-2011-edtech-trends",
+    "type": "book",
+    "year": 2011,
+    "authors": ["มานิตย์ อาษานอก"],
+    "title": {
+      "th": "แนวโน้มเทคโนโลยีการศึกษาในอนาคต (บทใน 'พื้นฐานกระบวนทัศน์ทางการศึกษา')",
+      "en": "Trends in Educational Technology (chapter in 'Foundations of Educational Paradigm')"
+    },
+    "venue": "อภิชาติการพิมพ์, มหาสารคาม (พิมพ์ครั้งที่ 3)",
+    "pages": "190-202"
+  },
+
+  {
+    "id": "asanok-2017-dyslexic-conf",
+    "type": "conference",
+    "year": 2017,
+    "authors": ["Asanok, M.", "Changpetch, C.", "Sukthong, N.", "Namkhun, S."],
+    "title": { "en": "Assistive mobile application development to enhancing learning performance of dyslexic children: preliminary evaluation" },
+    "venue": "The 3rd National Conference of Industrial Technology, Mahasarakham, Thailand",
+    "pages": "748-754"
+  },
+  {
+    "id": "munkong-2015-thesis-conf",
+    "type": "conference",
+    "year": 2015,
+    "authors": ["Munkong, P.", "Asanok, M."],
+    "title": { "en": "The Development of Thesis Tracking Information System in Faculty of Education, Mahasarakham University" },
+    "venue": "The 5th STOU Graduate Research Conference, Sukhothai Thammathirat Open University"
+  },
+  {
+    "id": "narissara-2013-geometry-conf",
+    "type": "conference",
+    "year": 2013,
+    "authors": ["Utaipean, N.", "Kwunsakul, K.", "Asanok, M."],
+    "title": { "en": "The Development of Courseware on Geometry Upon Mathematics Subject for Three Grade Students" },
+    "venue": "The 7th Srinakharinwirot Academic Conference, Bangkok"
+  },
+  {
+    "id": "pornthip-2013-english-conf",
+    "type": "conference",
+    "year": 2013,
+    "authors": ["Poona, P.", "Kwunsakul, K.", "Asanok, M."],
+    "title": { "en": "The Development of Courseware on the Place in Daily Life upon English Subject for Mattayomsuksa" },
+    "venue": "The 7th Srinakharinwirot Academic Conference, Bangkok"
+  },
+  {
+    "id": "sakait-2013-greeting-conf",
+    "type": "conference",
+    "year": 2013,
+    "authors": ["Jalao, S.", "Kwunsakul, K.", "Asanok, M."],
+    "title": { "en": "The Development of Courseware on Greeting upon English Subject for Mathayomsuksa one Student" },
+    "venue": "The 7th Srinakharinwirot Academic Conference, Bangkok"
+  },
+  {
+    "id": "amnat-2013-alumni-conf",
+    "type": "conference",
+    "year": 2013,
+    "authors": ["Chanawong, A.", "Kidrakarn, P.", "Asanok, M."],
+    "title": { "en": "Information System on the Internet Development for Alumni in Faculty of Education Mahasarakham University" },
+    "venue": "The 8th National Conference on Educational Reform 'Learning Management in 21st Century', Mahasarakham",
+    "pages": "2282-2289"
+  },
+  {
+    "id": "asanok-2008-elearning-conf",
+    "type": "conference",
+    "year": 2008,
+    "authors": ["Asanok, M.", "Kidrakhan, P.", "Brahmaworn, C."],
+    "title": { "en": "Building a Critical Components for Successful a Multimedia-based Collaborative e-Learning Design Framework" },
+    "venue": "5th International Conference on eLearning for Knowledge-Based Society, Assumption University, Bangkok"
+  },
+  {
+    "id": "asanok-2005-academic-system",
+    "type": "conference",
+    "year": 2005,
+    "authors": ["Asanok, M."],
+    "title": { "en": "The Development of Academic Information Systems in the Faculty of Education, Mahasarakham University" },
+    "venue": "The 1st Thailand Education National Congress, Bangkok"
+  }
+]

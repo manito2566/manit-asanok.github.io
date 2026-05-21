@@ -1,0 +1,427 @@
+{
+  "name": {
+    "th": "ผู้ช่วยศาสตราจารย์ ดร.มานิตย์ อาษานอก",
+    "en": "Asst. Prof. Dr. Manit Asanok"
+  },
+  "shortName": {
+    "th": "ดร.มานิตย์ อาษานอก",
+    "en": "Dr. Manit Asanok"
+  },
+  "position": {
+    "th": "ผู้ช่วยศาสตราจารย์ประจำ สาขาวิชาเทคโนโลยีการศึกษา",
+    "en": "Assistant Professor of Educational Technology and Communications"
+  },
+  "department": {
+    "th": "ภาควิชาเทคโนโลยีและสื่อสารการศึกษา คณะศึกษาศาสตร์",
+    "en": "Department of Educational Technology and Communications, Faculty of Education"
+  },
+  "institution": {
+    "th": "มหาวิทยาลัยมหาสารคาม",
+    "en": "Mahasarakham University"
+  },
+  "tagline": {
+    "th": "นักการศึกษาด้านเทคโนโลยีและสื่อสารการศึกษา มุ่งเน้นการบูรณาการ AI, Robotics, IoT และนวัตกรรมการเรียนรู้ดิจิทัล",
+    "en": "Educator and researcher in Educational Technology, focusing on AI, Robotics, IoT, and digital learning innovations"
+  },
+  "bio": {
+    "th": [
+      "ผู้ช่วยศาสตราจารย์ ดร.มานิตย์ อาษานอก ดำรงตำแหน่งอาจารย์ประจำ ภาควิชาเทคโนโลยีและสื่อสารการศึกษา คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม ตั้งแต่ปี พ.ศ. 2554",
+      "สำเร็จการศึกษาระดับปริญญาเอกและปริญญาโทสาขาเทคโนโลยีและสื่อสารการศึกษา จากมหาวิทยาลัยมหาสารคาม และระดับปริญญาตรีสาขาคณิตศาสตร์ จากสถาบันราชภัฏเลย (เกียรตินิยมอันดับ 2)",
+      "งานวิจัยครอบคลุมหลากหลายด้าน อาทิ ปัญญาประดิษฐ์ (AI) การเรียนรู้ของเครื่อง (ML) หุ่นยนต์เพื่อการศึกษา (RE) อินเทอร์เน็ตของสรรพสิ่ง (IoT) เทคโนโลยีสารสนเทศและการสื่อสาร (ICT) การออกแบบการเรียนการสอน (ID) และการพัฒนาวิชาชีพครู (TPD)",
+      "ผลงานวิจัยได้รับการตีพิมพ์ในวารสารระดับนานาชาติที่อยู่ในฐานข้อมูล Scopus หลายฉบับ เช่น Nanotechnology Perceptions, Educational Research and Reviews, และ Shanlax International Journal of Education"
+    ],
+    "en": [
+      "Dr. Manit Asanok is an Assistant Professor of Educational Technology and Communications at Mahasarakham University, Thailand, where he has served as a full-time lecturer since 2011.",
+      "He earned his Ph.D. and M.Ed. in Educational Technology and Communications from Mahasarakham University, and his B.Ed. in Mathematics from Loei Rajabhat University (Second-class Honours).",
+      "His research interests span a wide range of educational innovations, particularly in digital learning technologies including Artificial Intelligence (AI), Machine Learning (ML), Robotics Education (RE), Internet of Things (IoT), Information and Communication Technology (ICT), Instructional Design (ID), and Teacher Professional Development (TPD).",
+      "Dr. Asanok's works have been published in several peer-reviewed international journals indexed in Scopus, such as Nanotechnology Perceptions, Educational Research and Reviews, and Shanlax International Journal of Education. His research emphasizes technology-enhanced learning, strategic thinking development, makerspace environments, and sustainable agricultural learning systems through AI."
+    ]
+  },
+  "keywords": [
+    "EdTech",
+    "AI",
+    "Machine Learning",
+    "Robotics Education",
+    "IoT",
+    "ICT",
+    "Teacher Professional Development",
+    "Instructional Design",
+    "Learning Science & Technology"
+  ],
+  "identifiers": {
+    "scopusId": "57433230700",
+    "scopusUrl": "https://www.scopus.com/authid/detail.uri?authorId=57433230700",
+    "orcid": "0000-0002-7903-1146",
+    "orcidUrl": "https://orcid.org/0000-0002-7903-1146",
+    "adScientificIndex": "5170275",
+    "adScientificUrl": "https://www.adscientificindex.com/scientist/manit-asanok/5170275"
+  },
+  "contact": {
+    "address": {
+      "th": "ภาควิชาเทคโนโลยีและสื่อสารการศึกษา คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม ต.ตลาด อ.เมือง จ.มหาสารคาม 44000",
+      "en": "Department of Educational Technology and Communications, Faculty of Education, Mahasarakham University, Talad, Muang District, Mahasarakham 44000, Thailand"
+    },
+    "phone": "+66 43 754 321-40 ext. 6235",
+    "phoneLabel": {
+      "th": "โทรศัพท์",
+      "en": "Phone"
+    },
+    "mapsUrl": "https://www.google.com/maps/place/Faculty+of+Education,+Mahasarakham+University"
+  },
+  "education": [
+    {
+      "level": { "th": "ปริญญาเอก", "en": "Doctoral Degree" },
+      "year": 2554,
+      "yearEn": 2011,
+      "degree": "Ph.D. (ปร.ด.)",
+      "major": {
+        "th": "เทคโนโลยีและสื่อสารการศึกษา",
+        "en": "Educational Technology and Communication"
+      },
+      "institution": {
+        "th": "มหาวิทยาลัยมหาสารคาม",
+        "en": "Mahasarakham University"
+      },
+      "thesis": {
+        "th": "การพัฒนาระบบการเรียนแบบร่วมมือเป็นฐานโดยใช้การเรียนอิเล็กทรอนิกส์ในระดับอุดมศึกษา",
+        "en": "Development of a Collaborative-based E-learning System at the Higher Education Level"
+      },
+      "scholarship": {
+        "th": "ทุนรัฐบาลโครงการผลิตและพัฒนาอาจารย์ สกอ. ประจำปี 2548",
+        "en": "OHEC Scholarship for Faculty Development (2005)"
+      }
+    },
+    {
+      "level": { "th": "ปริญญาโท", "en": "Master's Degree" },
+      "year": 2546,
+      "yearEn": 2003,
+      "degree": "M.Ed. (กศ.ม.)",
+      "major": {
+        "th": "เทคโนโลยีการศึกษา",
+        "en": "Educational Technology"
+      },
+      "institution": {
+        "th": "มหาวิทยาลัยมหาสารคาม",
+        "en": "Mahasarakham University"
+      },
+      "thesis": {
+        "th": "การพัฒนาระบบสารสนเทศงานวิชาการ คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม",
+        "en": "The Development of Academic Information Systems in the Faculty of Education, Mahasarakham University"
+      }
+    },
+    {
+      "level": { "th": "ปริญญาตรี", "en": "Bachelor's Degree" },
+      "year": 2540,
+      "yearEn": 1997,
+      "degree": "B.Ed. (ค.บ.)",
+      "major": {
+        "th": "วิชาเอกคณิตศาสตร์ วิชาโทคอมพิวเตอร์ (เกียรตินิยมอันดับ 2)",
+        "en": "Major: Mathematics, Minor: Computer (Second-class Honours)"
+      },
+      "institution": {
+        "th": "สถาบันราชภัฏเลย",
+        "en": "Loei Rajabhat University"
+      },
+      "scholarship": {
+        "th": "ทุนคุรุทายาท สปช. กระทรวงศึกษาธิการ",
+        "en": "Kurutayat Scholarship, Ministry of Education"
+      }
+    }
+  ],
+  "positions": [
+    {
+      "year": "2540-2547",
+      "yearEn": "1997-2004",
+      "title": { "th": "อาจารย์ 1", "en": "Teacher" },
+      "org": {
+        "th": "โรงเรียนบ้านโพนทอง อ.ปากชม จ.เลย",
+        "en": "Ban Phonthong School, Pak Chom, Loei"
+      }
+    },
+    {
+      "year": "2547-2548",
+      "yearEn": "2004-2005",
+      "title": { "th": "ครู", "en": "Teacher" },
+      "org": {
+        "th": "โรงเรียนบ้านเหล่าจั่น อ.นาดูน จ.มหาสารคาม",
+        "en": "Ban Loajun School, Nadun, Maha Sarakham"
+      }
+    },
+    {
+      "year": "2550-2551",
+      "yearEn": "2007-2008",
+      "title": { "th": "อาจารย์ผู้ช่วยสอน", "en": "Lecturer Assistant" },
+      "org": {
+        "th": "ภาควิชาเทคโนโลยีและสื่อสารการศึกษา คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม",
+        "en": "Department of Educational Technology and Communications, Mahasarakham University"
+      }
+    },
+    {
+      "year": "2554-ปัจจุบัน",
+      "yearEn": "2011-Present",
+      "title": {
+        "th": "อาจารย์ประจำหลักสูตร กศ.บ. เทคโนโลยีการศึกษาและคอมพิวเตอร์ศึกษา",
+        "en": "Faculty Staff, B.Ed. Educational Technology and Computer Education"
+      },
+      "org": {
+        "th": "ภาควิชาเทคโนโลยีและสื่อสารการศึกษา คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม",
+        "en": "Department of Educational Technology and Communications, Mahasarakham University"
+      }
+    },
+    {
+      "year": "2555-2557",
+      "yearEn": "2012-2014",
+      "title": { "th": "ผู้ช่วยคณบดีฝ่ายวิชาการ (e-learning)", "en": "Assistant to the Dean (e-learning)" },
+      "org": {
+        "th": "คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม",
+        "en": "Faculty of Education, Mahasarakham University"
+      }
+    },
+    {
+      "year": "2556-ปัจจุบัน",
+      "yearEn": "2013-Present",
+      "title": {
+        "th": "คณะกรรมการมูลนิธิสถาบันวิจัยระบบการศึกษา",
+        "en": "Institute for Research on Education System Foundation Committee"
+      },
+      "org": {
+        "th": "มูลนิธิสถาบันวิจัยระบบการศึกษา",
+        "en": "Institute for Research on Education System Foundation"
+      }
+    },
+    {
+      "year": "2559-2563",
+      "yearEn": "2016-2020",
+      "title": {
+        "th": "หัวหน้าภาควิชาเทคโนโลยีและสื่อสารการศึกษา",
+        "en": "Head, Department of Educational Technology and Communications"
+      },
+      "org": {
+        "th": "คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม",
+        "en": "Faculty of Education, Mahasarakham University"
+      }
+    },
+    {
+      "year": "2561-ปัจจุบัน",
+      "yearEn": "2018-Present",
+      "title": { "th": "ผู้ช่วยศาสตราจารย์ สาขาเทคโนโลยีการศึกษา", "en": "Assistant Professor of Educational Technology" },
+      "org": {
+        "th": "ภาควิชาเทคโนโลยีและสื่อสารการศึกษา คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม",
+        "en": "Department of Educational Technology and Communications, Mahasarakham University"
+      }
+    },
+    {
+      "year": "2564-ปัจจุบัน",
+      "yearEn": "2021-Present",
+      "title": {
+        "th": "ประธานหลักสูตร กศ.บ. เทคโนโลยีการศึกษาและคอมพิวเตอร์ศึกษา (ปรับปรุง 2562)",
+        "en": "Chairman, B.Ed. Educational Technology and Computer Education Program"
+      },
+      "org": {
+        "th": "คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม",
+        "en": "Faculty of Education, Mahasarakham University"
+      }
+    },
+    {
+      "year": "2566-ปัจจุบัน",
+      "yearEn": "2023-Present",
+      "title": {
+        "th": "กรรมการประจำคณะศึกษาศาสตร์ ประเภทคณาจารย์ประจำ",
+        "en": "Faculty Board Member (Faculty Representative)"
+      },
+      "org": {
+        "th": "คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม",
+        "en": "Faculty of Education, Mahasarakham University"
+      }
+    },
+    {
+      "year": "2568-ปัจจุบัน",
+      "yearEn": "2025-Present",
+      "title": {
+        "th": "ผู้อำนวยการศูนย์บริการวิชาการและเผยแพร่นวัตกรรมทางการศึกษา",
+        "en": "Director, Academic Service and Educational Innovation Dissemination Center"
+      },
+      "org": {
+        "th": "คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม",
+        "en": "Faculty of Education, Mahasarakham University"
+      }
+    },
+    {
+      "year": "2568-ปัจจุบัน",
+      "yearEn": "2025-Present",
+      "title": {
+        "th": "คณะอนุกรรมการข้าราชการครูและบุคลากรทางการศึกษา (อ.ก.ค.ศ.) เขตพื้นที่การศึกษามัธยมศึกษา มหาสารคาม",
+        "en": "Subcommittee Member, Teacher Civil Service Commission (Mahasarakham Secondary Education Service Area)"
+      },
+      "org": {
+        "th": "ก.ค.ศ. กระทรวงศึกษาธิการ",
+        "en": "OTEPC, Ministry of Education"
+      }
+    }
+  ],
+  "awards": [
+    {
+      "year": 2567,
+      "yearEn": 2024,
+      "title": {
+        "th": "รางวัลชนะเลิศ MSU Learning Innovation Awards 2024 ประเภทรูปแบบการเรียนการสอน กลุ่มมนุษยศาสตร์และสังคมศาสตร์",
+        "en": "Winner – MSU Learning Innovation Awards 2024 (Teaching Model, Humanities & Social Sciences)"
+      },
+      "by": {
+        "th": "มหาวิทยาลัยมหาสารคาม",
+        "en": "Mahasarakham University"
+      }
+    },
+    {
+      "year": 2562,
+      "yearEn": 2019,
+      "title": {
+        "th": "รางวัลรองชนะเลิศ อันดับ 1 — ETC Academy Project (KM คณะศึกษาศาสตร์ ปีงบประมาณ 2562)",
+        "en": "1st Runner-up – ETC Academy Project (KM Award, Faculty of Education FY2019)"
+      }
+    },
+    {
+      "year": 2561,
+      "yearEn": 2018,
+      "title": {
+        "th": "รางวัลรองชนะเลิศ อันดับ 1 — แนวปฏิบัติที่ดีเพื่อจัดการงานวัสดุและครุภัณฑ์ (KM ปีงบประมาณ 2561)",
+        "en": "1st Runner-up – Best Practice in Asset Management (KM Award FY2018)"
+      }
+    },
+    {
+      "year": 2560,
+      "yearEn": 2017,
+      "title": {
+        "th": "รางวัลรองชนะเลิศ อันดับ 1 — เทคนิคการนิเทศโดยใช้การสะท้อนกระบวนการเรียนรู้ (KM ปีงบประมาณ 2560)",
+        "en": "1st Runner-up – Reflection-based Supervision Technique (KM Award FY2017)"
+      }
+    },
+    {
+      "year": 2550,
+      "yearEn": 2007,
+      "title": {
+        "th": "ทุนภูมิพล ระดับปริญญาเอก",
+        "en": "Bhumibol Scholarship (Doctoral level)"
+      },
+      "by": {
+        "th": "คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม",
+        "en": "Faculty of Education, Mahasarakham University"
+      }
+    },
+    {
+      "year": 2550,
+      "yearEn": 2007,
+      "title": {
+        "th": "รางวัลอาจารย์ที่ปรึกษาดีเด่น",
+        "en": "Outstanding Academic Advisor Award"
+      },
+      "by": {
+        "th": "คณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม",
+        "en": "Faculty of Education, Mahasarakham University"
+      }
+    },
+    {
+      "year": 2548,
+      "yearEn": 2005,
+      "title": {
+        "th": "ทุนโครงการผลิตและพัฒนาอาจารย์ (UDC) สกอ.",
+        "en": "OHEC Faculty Development Scholarship (UDC)"
+      }
+    },
+    {
+      "year": 2547,
+      "yearEn": 2004,
+      "title": {
+        "th": "รางวัลครูผู้สอนคอมพิวเตอร์ดีเด่น สพท. มค. 2 กระทรวงศึกษาธิการ",
+        "en": "Outstanding Computer Teacher Award (Maha Sarakham ESAO 2)"
+      }
+    },
+    {
+      "year": 2535,
+      "yearEn": 1992,
+      "title": {
+        "th": "ทุนนักเรียน \"รางวัลพระราชทาน\"",
+        "en": "Royal Award Student Scholarship"
+      }
+    }
+  ],
+  "training": [
+    {
+      "title": {
+        "th": "Strengthening Teachers' Capability in the use of ICT",
+        "en": "Strengthening Teachers' Capability in the use of ICT"
+      },
+      "by": "Nanyang Polytechnic, Singapore"
+    },
+    {
+      "title": {
+        "th": "Practical Data Mining with RapidMiner Studio 9",
+        "en": "Practical Data Mining with RapidMiner Studio 9"
+      },
+      "by": "Data Cube"
+    },
+    {
+      "title": {
+        "th": "AI101 Introduction to Deep Learning",
+        "en": "AI101 Introduction to Deep Learning"
+      },
+      "by": "TAUTOLOGY University"
+    },
+    {
+      "title": {
+        "th": "โครงการฝึกอบรม \"สร้างนักวิจัยรุ่นใหม่\" รุ่นที่ 4",
+        "en": "New Researcher Training Program (Batch 4)"
+      },
+      "by": {
+        "th": "สำนักงานคณะกรรมการวิจัยแห่งชาติ (วช.)",
+        "en": "National Research Council of Thailand (NRCT)"
+      }
+    },
+    {
+      "title": {
+        "th": "ผู้นำเพื่อการเปลี่ยนแปลงทางการศึกษา รุ่นที่ 2",
+        "en": "Leaders for Educational Change (Batch 2)"
+      },
+      "by": {
+        "th": "สถาบันพัฒนาครู คณาจารย์ และบุคลากรทางการศึกษา",
+        "en": "Institute for Educational Personnel Development"
+      }
+    },
+    {
+      "year": 2568,
+      "yearEn": 2025,
+      "title": {
+        "th": "หลักสูตรพัฒนาผู้ประเมินระดับหลักสูตรตามเกณฑ์ AUN-QA version 4",
+        "en": "AUN-QA Version 4 Assessor Development Course"
+      },
+      "by": {
+        "th": "ที่ประชุมอธิการบดีแห่งประเทศไทย",
+        "en": "Council of University Presidents of Thailand"
+      }
+    },
+    {
+      "year": 2568,
+      "yearEn": 2025,
+      "title": {
+        "th": "หลักสูตรการจัดทำหลักสูตรตามแนวทาง OBE (Outcome-Based Education)",
+        "en": "Outcome-Based Education (OBE) Curriculum Development Course"
+      },
+      "by": {
+        "th": "ที่ประชุมอธิการบดีแห่งประเทศไทย",
+        "en": "Council of University Presidents of Thailand"
+      }
+    },
+    {
+      "year": 2568,
+      "yearEn": 2025,
+      "title": {
+        "th": "AUN-QA Implementation and Gap Analysis version 4",
+        "en": "AUN-QA Implementation and Gap Analysis Version 4"
+      },
+      "by": {
+        "th": "ที่ประชุมอธิการบดีแห่งประเทศไทย",
+        "en": "Council of University Presidents of Thailand"
+      }
+    }
+  ]
+}

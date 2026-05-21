@@ -1,0 +1,84 @@
+{
+  "lang": "th",
+  "nav": {
+    "home": "หน้าหลัก",
+    "publications": "ผลงานวิจัย",
+    "teaching": "การสอน",
+    "news": "ข่าวสาร",
+    "contact": "ติดต่อ"
+  },
+  "hero": {
+    "downloadCV": "ดาวน์โหลด CV",
+    "viewPublications": "ดูผลงานวิจัย",
+    "researchInterests": "ความสนใจด้านการวิจัย"
+  },
+  "sections": {
+    "about": "เกี่ยวกับ",
+    "education": "ประวัติการศึกษา",
+    "positions": "ประสบการณ์การทำงาน",
+    "awards": "ทุน-รางวัล",
+    "training": "การฝึกอบรม",
+    "stats": "ข้อมูลทางวิชาการ",
+    "featuredPublications": "ผลงานวิจัยล่าสุด",
+    "latestNews": "ข่าวสารล่าสุด",
+    "viewAll": "ดูทั้งหมด"
+  },
+  "stats": {
+    "scopus": "Scopus Author ID",
+    "orcid": "ORCID iD",
+    "adIndex": "AD Scientific Index",
+    "publications": "ผลงานวิจัย",
+    "intlJournals": "วารสารนานาชาติ",
+    "tciJournals": "วารสาร TCI",
+    "conferences": "ประชุมวิชาการ"
+  },
+  "publications": {
+    "title": "ผลงานวิจัยและบทความวิชาการ",
+    "filter": "กรอง",
+    "all": "ทั้งหมด",
+    "international": "นานาชาติ (Scopus)",
+    "national": "ระดับชาติ (TCI)",
+    "conference": "ประชุมวิชาการ",
+    "academicArticle": "บทความวิชาการ",
+    "book": "หนังสือ/ตำรา",
+    "year": "ปี",
+    "allYears": "ทุกปี",
+    "search": "ค้นหา title หรือ co-author...",
+    "noResults": "ไม่พบผลงานที่ตรงกับเงื่อนไข",
+    "showing": "แสดง",
+    "of": "จาก",
+    "items": "รายการ",
+    "doi": "DOI",
+    "pdf": "PDF",
+    "link": "ลิงก์"
+  },
+  "teaching": {
+    "title": "การสอนและการให้คำปรึกษา",
+    "courses": "รายวิชาที่สอน",
+    "advising": "นิสิตที่ปรึกษาวิทยานิพนธ์",
+    "studentName": "ชื่อนิสิต",
+    "thesisTitle": "ชื่อวิทยานิพนธ์",
+    "year": "ปี",
+    "publication": "ผลงานตีพิมพ์"
+  },
+  "news": {
+    "title": "ข่าวสารและบทความ",
+    "readMore": "อ่านต่อ",
+    "noNews": "ยังไม่มีข่าวสาร"
+  },
+  "contact": {
+    "title": "ติดต่อ",
+    "name": "ชื่อ",
+    "email": "อีเมล",
+    "subject": "หัวข้อ",
+    "message": "ข้อความ",
+    "send": "ส่งข้อความ",
+    "address": "ที่อยู่",
+    "office": "ที่ทำงาน",
+    "thanks": "ขอบคุณ ระบบได้รับข้อความของท่านแล้ว"
+  },
+  "footer": {
+    "copyright": "สงวนลิขสิทธิ์",
+    "lastUpdate": "อัปเดตล่าสุด"
+  }
+}

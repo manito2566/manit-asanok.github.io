@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Teaching — Dr. Manit Asanok</title>
+<meta name="description" content="Courses taught and thesis advising by Asst. Prof. Dr. Manit Asanok at Mahasarakham University." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<link rel="stylesheet" href="assets/css/custom.css" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a3a6e'/%3E%3Ctext x='50' y='65' text-anchor='middle' fill='%23c9a227' font-size='52' font-weight='700' font-family='Inter,sans-serif'%3EM%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container-narrow flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2 font-bold text-lg" style="color:var(--color-primary-dark)">
+      <span class="inline-flex w-9 h-9 rounded-lg items-center justify-center text-white" style="background:linear-gradient(135deg,#1a3a6e,#c9a227)">M</span>
+      <span class="hidden sm:inline">Manit Asanok</span>
+    </a>
+    <div class="hidden md:flex items-center gap-1">
+      <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+      <a href="publications.html" class="nav-link" data-i18n="nav.publications">Publications</a>
+      <a href="teaching.html" class="nav-link" data-i18n="nav.teaching">Teaching</a>
+      <a href="news.html" class="nav-link" data-i18n="nav.news">News</a>
+      <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+      <button data-i18n-toggle class="ml-3 px-3 py-1.5 rounded-md text-sm font-semibold border" style="border-color:var(--color-primary);color:var(--color-primary)">TH / EN</button>
+    </div>
+    <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
+  </div>
+  <div id="mobile-menu" class="md:hidden hidden border-t" style="border-color:var(--color-border);background:white">
+    <div class="container-narrow py-3 flex flex-col gap-1">
+      <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+      <a href="publications.html" class="nav-link" data-i18n="nav.publications">Publications</a>
+      <a href="teaching.html" class="nav-link" data-i18n="nav.teaching">Teaching</a>
+      <a href="news.html" class="nav-link" data-i18n="nav.news">News</a>
+      <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+      <button data-i18n-toggle class="text-left nav-link">🌐 TH / EN</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero-gradient">
+  <div class="container-narrow section-pad">
+    <div class="section-divider"></div>
+    <h1 class="text-4xl md:text-5xl mb-3" data-i18n="teaching.title">Teaching & Advising</h1>
+    <p class="text-base text-muted max-w-2xl">
+      Courses taught at the Department of Educational Technology and Communications, Faculty of Education, Mahasarakham University.
+    </p>
+  </div>
+</header>
+
+<!-- ===== Courses ===== -->
+<section class="section-pad">
+  <div class="container-narrow">
+    <div class="section-divider"></div>
+    <h2 class="text-3xl mb-8" data-i18n="teaching.courses">Courses Taught</h2>
+    <div id="courses-list" class="grid md:grid-cols-2 gap-4"></div>
+  </div>
+</section>
+
+<!-- ===== Thesis Advising ===== -->
+<section class="section-pad bg-white border-y" style="border-color:var(--color-border)">
+  <div class="container-narrow">
+    <div class="section-divider"></div>
+    <h2 class="text-3xl mb-3" data-i18n="teaching.advising">Thesis Advising</h2>
+    <p class="text-sm text-muted mb-6" id="advising-note"></p>
+
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b" style="border-color:var(--color-border)">
+            <th class="text-left py-3 px-3 font-semibold uppercase text-xs tracking-wider text-muted" data-i18n="teaching.year">Year</th>
+            <th class="text-left py-3 px-3 font-semibold uppercase text-xs tracking-wider text-muted" data-i18n="teaching.studentName">Student</th>
+            <th class="text-left py-3 px-3 font-semibold uppercase text-xs tracking-wider text-muted" data-i18n="teaching.thesisTitle">Thesis Title</th>
+            <th class="text-left py-3 px-3 font-semibold uppercase text-xs tracking-wider text-muted" data-i18n="teaching.publication">Publication</th>
+          </tr>
+        </thead>
+        <tbody id="advising-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer id="site-footer" style="background:var(--color-primary-dark);color:white"></footer>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  (async () => {
+    if (window.i18n) await window.i18n.init();
+    const lang = window.i18n.lang;
+
+    const teachRes = await fetch('data/teaching.json');
+    const teach = await teachRes.json();
+
+    // Courses
+    const coursesEl = document.getElementById('courses-list');
+    coursesEl.innerHTML = teach.courses.map(c => `
+      <div class="card p-5">
+        <span class="badge badge-academic mb-2 inline-block">${window.i18n.pick(c.level)}</span>
+        <h3 class="text-lg mb-1 mt-2">${window.i18n.pick(c.title)}</h3>
+        <p class="text-sm text-muted">${window.i18n.pick(c.program)}</p>
+      </div>
+    `).join('');
+
+    document.getElementById('advising-note').textContent = window.i18n.pick(teach.advisingNotes);
+
+    // Auto-extract advising list from publications
+    const pubRes = await fetch('data/publications.json');
+    const pubs = await pubRes.json();
+
+    // Heuristic: a publication is "advised" if Asanok appears as 2nd+ author (student is first)
+    // and type is national/conference (most TCI/conf are with students)
+    const ASANOK_PATTERNS = [/Asanok/i, /อาษานอก/];
+    const isAsanok = (a) => ASANOK_PATTERNS.some(re => re.test(a));
+
+    const advised = pubs.filter(p => {
+      if (!p.authors || p.authors.length < 2) return false;
+      const first = p.authors[0];
+      if (isAsanok(first)) return false; // Asanok is first author = own paper
+      // include only if Asanok is one of the co-authors
+      const asanokIdx = p.authors.findIndex(isAsanok);
+      if (asanokIdx === -1) return false;
+      // Most likely student work: TCI national or conference
+      return ['national', 'conference'].includes(p.type);
+    });
+
+    // Deduplicate by student name (first author) — keep most recent publication
+    const byStudent = new Map();
+    for (const p of advised) {
+      const student = p.authors[0];
+      const existing = byStudent.get(student);
+      if (!existing || p.year > existing.year) byStudent.set(student, p);
+    }
+    const advisedList = [...byStudent.values()].sort((a, b) => b.year - a.year);
+
+    const tbody = document.getElementById('advising-tbody');
+    if (advisedList.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="4" class="py-6 text-center text-muted">No data</td></tr>`;
+    } else {
+      tbody.innerHTML = advisedList.map(p => {
+        const title = window.i18n.pick(p.title);
+        const venue = p.venue || '';
+        return `
+          <tr class="border-b hover:bg-gray-50" style="border-color:var(--color-border)">
+            <td class="py-3 px-3 text-sm font-semibold text-accent align-top">${p.year}</td>
+            <td class="py-3 px-3 align-top font-medium">${p.authors[0]}</td>
+            <td class="py-3 px-3 text-sm align-top">${title}</td>
+            <td class="py-3 px-3 text-xs text-muted align-top"><em>${venue}</em></td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    if (window.lucide) lucide.createIcons();
+  })();
+</script>
+</body>
+</html>

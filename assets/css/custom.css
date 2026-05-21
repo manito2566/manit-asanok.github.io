@@ -1,0 +1,190 @@
+/* ===== Brand Colors (MSU Academic Modern) ===== */
+:root {
+  --color-primary: #1a3a6e;       /* MSU navy */
+  --color-primary-dark: #0f2547;
+  --color-primary-light: #2d5495;
+  --color-accent: #c9a227;        /* gold */
+  --color-accent-light: #e6c659;
+  --color-cream: #faf7f0;
+  --color-ink: #1f2937;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-card: #ffffff;
+  --shadow-soft: 0 1px 3px 0 rgba(0,0,0,0.05), 0 1px 2px 0 rgba(0,0,0,0.03);
+  --shadow-card: 0 4px 6px -1px rgba(0,0,0,0.06), 0 2px 4px -1px rgba(0,0,0,0.04);
+  --shadow-hover: 0 10px 25px -5px rgba(26,58,110,0.15), 0 4px 6px -2px rgba(26,58,110,0.05);
+}
+
+/* ===== Typography ===== */
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', 'Noto Sans Thai', system-ui, -apple-system, sans-serif;
+  color: var(--color-ink);
+  background-color: var(--color-cream);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html[lang="th"] body {
+  font-family: 'Noto Sans Thai', 'Inter', system-ui, sans-serif;
+}
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-primary-dark);
+}
+
+/* ===== Layout helpers ===== */
+.container-narrow { max-width: 72rem; margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+.section-pad { padding-top: 4rem; padding-bottom: 4rem; }
+.section-divider {
+  height: 4px;
+  width: 60px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  margin-bottom: 1.5rem;
+  border-radius: 2px;
+}
+
+/* ===== Navigation ===== */
+.navbar {
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky; top: 0; z-index: 50;
+}
+.nav-link {
+  color: var(--color-ink);
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  transition: color 0.15s, background 0.15s;
+}
+.nav-link:hover, .nav-link.active { color: var(--color-primary); background: rgba(26,58,110,0.06); }
+
+/* ===== Hero ===== */
+.hero-gradient {
+  background:
+    radial-gradient(circle at 80% 20%, rgba(201,162,39,0.10) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(26,58,110,0.12) 0%, transparent 50%),
+    linear-gradient(135deg, #ffffff 0%, var(--color-cream) 100%);
+}
+.profile-ring {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  padding: 4px;
+  border-radius: 9999px;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-soft);
+}
+.btn-primary:hover { background: var(--color-primary-dark); transform: translateY(-1px); box-shadow: var(--shadow-hover); }
+.btn-outline {
+  background: transparent;
+  color: var(--color-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid var(--color-primary);
+  transition: all 0.2s;
+}
+.btn-outline:hover { background: var(--color-primary); color: white; }
+
+/* ===== Cards ===== */
+.card {
+  background: var(--color-card);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.card:hover { box-shadow: var(--shadow-hover); }
+.card-interactive:hover { transform: translateY(-2px); }
+
+/* ===== Chips/Tags ===== */
+.chip {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  background: rgba(26,58,110,0.08);
+  color: var(--color-primary);
+  margin: 0.125rem;
+}
+.chip-accent { background: rgba(201,162,39,0.12); color: #8a6f15; }
+.badge-scopus { background: #ea580c; color: white; }
+.badge-tci { background: #0891b2; color: white; }
+.badge-conf { background: #7c3aed; color: white; }
+.badge-academic { background: #16a34a; color: white; }
+.badge-book { background: #b45309; color: white; }
+.badge {
+  display: inline-block;
+  padding: 0.125rem 0.625rem;
+  border-radius: 0.375rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ===== Publication card ===== */
+.pub-card {
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid var(--color-border);
+  background: white;
+  border-radius: 0.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  margin-bottom: 0.875rem;
+}
+.pub-card:hover { border-left-color: var(--color-primary); box-shadow: var(--shadow-soft); }
+.pub-card.is-international { border-left-color: #ea580c; }
+.pub-card.is-national { border-left-color: #0891b2; }
+.pub-card.is-conference { border-left-color: #7c3aed; }
+.pub-card.is-academic { border-left-color: #16a34a; }
+.pub-card.is-book { border-left-color: #b45309; }
+
+/* ===== Forms ===== */
+.input-field {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  background: white;
+  font-size: 0.9375rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.input-field:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(26,58,110,0.12); }
+
+/* ===== Utilities ===== */
+.text-primary { color: var(--color-primary); }
+.text-accent { color: var(--color-accent); }
+.text-muted { color: var(--color-muted); }
+.bg-primary { background-color: var(--color-primary); }
+.bg-accent { background-color: var(--color-accent); }
+.bg-cream { background-color: var(--color-cream); }
+
+/* ===== Print ===== */
+@media print {
+  .navbar, .no-print { display: none !important; }
+  body { background: white; }
+}
+
+/* ===== Responsive tweaks ===== */
+@media (max-width: 640px) {
+  .section-pad { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  h1 { font-size: 1.875rem; line-height: 1.2; }
+}
