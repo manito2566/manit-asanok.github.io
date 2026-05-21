@@ -9,8 +9,8 @@ function pubsApp() {
     activeYear: 'all',
     types: [
       { key: 'all', label: { th: 'ทั้งหมด', en: 'All' } },
-      { key: 'international', label: { th: 'นานาชาติ (Scopus)', en: 'International' } },
-      { key: 'national', label: { th: 'TCI', en: 'National (TCI)' } },
+      { key: 'international', label: { th: 'นานาชาติ', en: 'International' } },
+      { key: 'national', label: { th: 'ระดับชาติ', en: 'National' } },
       { key: 'conference', label: { th: 'ประชุมวิชาการ', en: 'Conference' } },
       { key: 'academic', label: { th: 'บทความวิชาการ', en: 'Academic Article' } },
       { key: 'book', label: { th: 'หนังสือ/ตำรา', en: 'Book' } }
@@ -66,6 +66,14 @@ function pubsApp() {
         academic: 'Academic',
         book: 'Book'
       })[type] || type;
+    },
+
+    // Build a Google Scholar search URL from the paper title
+    scholarUrl(p) {
+      const title = p.title?.en || p.title?.th || '';
+      const authors = (p.authors || []).slice(0, 2).join(' ');
+      const q = encodeURIComponent(`${title} ${authors}`.trim());
+      return `https://scholar.google.com/scholar?q=${q}`;
     },
 
     get filtered() {

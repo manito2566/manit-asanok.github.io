@@ -345,6 +345,7 @@ def build():
         grouped[k].sort(key=lambda x: x["year"], reverse=True)
 
     def apa(p, n):
+        import urllib.parse
         authors = ", ".join(p.get("authors", []))
         year = p.get("year", "")
         title = pick_en(p.get("title", ""))
@@ -366,7 +367,11 @@ def build():
         if doi:
             cite += f' <link href="https://doi.org/{doi}"><font color="#1a3a6e">https://doi.org/{doi}</font></link>'
         elif url:
-            cite += f' <link href="{url}"><font color="#1a3a6e">{url}</font></link>'
+            cite += f' <link href="{url}"><font color="#1a3a6e">Link</font></link>'
+        else:
+            # Google Scholar search fallback
+            q = urllib.parse.quote(f"{title} {' '.join(p.get('authors', [])[:2])}")
+            cite += f' <link href="https://scholar.google.com/scholar?q={q}"><font color="#6b7280">[search]</font></link>'
         return cite
 
     for type_key, type_label in type_order:
