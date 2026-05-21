@@ -148,12 +148,32 @@ git push -u origin main
 
 ---
 
+## วิธี Regenerate CV PDF
+
+CV PDF ถูก generate อัตโนมัติจากข้อมูลใน `data/profile.json` + `data/publications.json` ด้วย Python script
+
+ครั้งแรกติดตั้ง dependency:
+```powershell
+pip install reportlab pypdf
+```
+
+ทุกครั้งที่อัปเดตข้อมูลแล้วอยาก regenerate CV:
+```powershell
+cd C:\Users\manito\Documents\portfolio-website
+python scripts/generate_cv.py
+```
+ผลลัพธ์: `assets/docs/CV_Manit_Asanok.pdf` (~76 KB, 5 หน้า)
+
+แล้ว commit + push เหมือนเดิม
+
+---
+
 ## รายการสิ่งที่ต้องเตรียม (ก่อน Deploy จริง)
 
 | รายการ | ตำแหน่งไฟล์ | สถานะ |
 |---|---|---|
 | รูปโปรไฟล์ (500×500px square) | `assets/img/profile.jpg` | ⚠ ยังไม่มี |
-| ไฟล์ CV PDF | `assets/docs/CV_Manit_Asanok.pdf` | ⚠ ยังไม่มี |
+| ไฟล์ CV PDF | `assets/docs/CV_Manit_Asanok.pdf` | ✅ มีแล้ว (auto-generated) |
 | Open Graph image (1200×630px) | `assets/img/og-image.png` | ⚠ ยังไม่มี (มี fallback) |
 | Formspree Form ID | `contact.html` (แทน `YOUR_FORMSPREE_ID`) | ⚠ ยังไม่ตั้งค่า |
 

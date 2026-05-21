@@ -21,5 +21,9 @@ dist/
 .env
 .env.local
 
+# Python (CV generator script)
+__pycache__/
+*.pyc
+
 # Misc
 *.log
