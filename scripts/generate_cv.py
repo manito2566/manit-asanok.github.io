@@ -329,8 +329,8 @@ def build():
     story.append(Paragraph("PUBLICATIONS", style_h1))
 
     type_order = [
-        ("international", "International Journals (Scopus-indexed)"),
-        ("national",      "National Journals (Thai-Journal Citation Index, TCI)"),
+        ("international", "International Journals"),
+        ("national",      "National Journals"),
         ("conference",    "Conference Proceedings"),
         ("academic",      "Academic Articles"),
         ("book",          "Books / Textbooks / Teaching Documents"),

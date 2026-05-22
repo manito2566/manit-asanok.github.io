@@ -59,9 +59,10 @@ function pubsApp() {
     },
 
     badgeLabel(type) {
+      // Use neutral category labels (not indexing-database names)
       return ({
-        international: 'Scopus',
-        national: 'TCI',
+        international: 'International',
+        national: 'National',
         conference: 'Conference',
         academic: 'Academic',
         book: 'Book'
