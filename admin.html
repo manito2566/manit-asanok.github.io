@@ -693,12 +693,32 @@ python scripts/generate_cv.py</pre>
 <script src="assets/js/github-api.js"></script>
 <script src="assets/js/admin.js"></script>
 <script>
-  // Re-render icons whenever Alpine updates DOM
-  document.addEventListener('alpine:init', () => {
-    const observer = new MutationObserver(() => { if (window.lucide) lucide.createIcons(); });
+  // Re-render Lucide icons safely — only when NEW data-lucide nodes appear,
+  // and debounced via requestAnimationFrame to avoid infinite loops.
+  (function setupIconRefresh() {
+    let scheduled = false;
+    const hasNewIconNodes = (mutations) => {
+      for (const m of mutations) {
+        for (const node of m.addedNodes) {
+          if (node.nodeType !== 1) continue;
+          if (node.hasAttribute && node.hasAttribute('data-lucide')) return true;
+          if (node.querySelector && node.querySelector('[data-lucide]')) return true;
+        }
+      }
+      return false;
+    };
+    const observer = new MutationObserver((mutations) => {
+      if (scheduled || !hasNewIconNodes(mutations)) return;
+      scheduled = true;
+      requestAnimationFrame(() => {
+        scheduled = false;
+        if (window.lucide) lucide.createIcons();
+      });
+    });
     observer.observe(document.body, { childList: true, subtree: true });
-  });
-  setTimeout(() => { if (window.lucide) lucide.createIcons(); }, 200);
+    // Initial pass
+    setTimeout(() => { if (window.lucide) lucide.createIcons(); }, 200);
+  })();
 </script>
 </body>
 </html>
