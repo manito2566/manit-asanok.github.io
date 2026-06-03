@@ -6,24 +6,17 @@
       "th": "ใช้เทคโนโลยีและ AI อย่างไร ให้ผู้เรียน “คิดเป็น”",
       "en": "How to Use Technology and AI to Foster Students’ Critical Thinking"
     },
-    "tags": ["edtech", "ai", "critical-thinking", "tpack", "backward-design"],
+    "tags": [
+      "edtech",
+      "ai",
+      "critical-thinking",
+      "tpack",
+      "backward-design"
+    ],
     "cover": "assets/img/news/2026-05-22-cover.png",
     "excerpt": {
       "th": "ถอดความและประยุกต์จากบทความ Mejia & Sargent (2023) เชื่อมแนวคิด TPACK + Backward Design + Ed 1.0–3.0 เพื่อพาผู้เรียนจาก ‘รับข้อมูล’ สู่ ‘สร้างความรู้’",
       "en": "An adaptation of Mejia & Sargent (2023) connecting TPACK, Backward Design, and Ed 1.0–3.0 to move learners from receiving information to constructing knowledge."
-    }
-  },
-  {
-    "slug": "2025-02-24-academic-service-center",
-    "date": "2025-02-24",
-    "title": {
-      "th": "ดำรงตำแหน่งผู้อำนวยการศูนย์บริการวิชาการและเผยแพร่นวัตกรรมทางการศึกษา",
-      "en": "Appointed Director of the Academic Service and Educational Innovation Dissemination Center"
-    },
-    "tags": ["appointment", "msu", "leadership"],
-    "excerpt": {
-      "th": "คำสั่งคณะศึกษาศาสตร์ มหาวิทยาลัยมหาสารคาม ที่ 270/2568 — ดำรงตำแหน่งผู้อำนวยการศูนย์ฯ",
-      "en": "Order No. 270/2568 — Director of the Academic Service Center, Faculty of Education, MSU"
     }
   },
   {
@@ -33,7 +26,11 @@
       "th": "ได้รับรางวัลชนะเลิศ MSU Learning Innovation Awards 2024",
       "en": "Winner of MSU Learning Innovation Awards 2024"
     },
-    "tags": ["award", "innovation", "teaching"],
+    "tags": [
+      "award",
+      "innovation",
+      "teaching"
+    ],
     "excerpt": {
       "th": "รางวัลชนะเลิศ ประเภทรูปแบบการเรียนการสอน กลุ่มมนุษยศาสตร์และสังคมศาสตร์",
       "en": "Winner in the Teaching Model category, Humanities & Social Sciences cluster"
