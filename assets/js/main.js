@@ -47,7 +47,10 @@ async function renderFooter() {
       </div>
       <div class="border-t mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-xs" style="border-color:#334155;color:#94a3b8">
         <p>&copy; ${year} ${name}. <span data-i18n="footer.copyright">All rights reserved</span></p>
-        <p class="mt-2 md:mt-0"><span data-i18n="footer.lastUpdate">Last updated</span>: 2026-05-21</p>
+        <p class="mt-2 md:mt-0">
+          <span data-i18n="footer.lastUpdate">Last updated</span>: 2026-05-22
+          <a href="admin.html" class="ml-3 opacity-60 hover:opacity-100" style="color:#94a3b8" title="Admin panel">·  admin</a>
+        </p>
       </div>
     </div>
   `;
