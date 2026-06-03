@@ -13,6 +13,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <link rel="stylesheet" href="assets/css/custom.css" />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a3a6e'/%3E%3Ctext x='50' y='65' text-anchor='middle' fill='%23c9a227' font-size='52' font-weight='700' font-family='Inter,sans-serif'%3EM%3C/text%3E%3C/svg%3E" />
 
@@ -38,6 +39,23 @@
   .icon-btn { padding: 0.375rem; border-radius: 0.375rem; color: var(--color-muted); transition: all 0.15s; }
   .icon-btn:hover { background: var(--color-cream); color: var(--color-primary); }
   .icon-btn.danger:hover { background: #fef2f2; color: #b91c1c; }
+  /* Markdown preview (compact, for admin) */
+  .prose-news { font-size: 0.875rem; line-height: 1.6; }
+  .prose-news h1 { font-size: 1.5rem; font-weight: 700; margin: 0.75rem 0 0.5rem; color: var(--color-primary-dark); }
+  .prose-news h2 { font-size: 1.25rem; font-weight: 700; margin: 1rem 0 0.5rem; color: var(--color-primary-dark); }
+  .prose-news h3 { font-size: 1.05rem; font-weight: 600; margin: 0.75rem 0 0.4rem; color: var(--color-primary); }
+  .prose-news p { margin-bottom: 0.5rem; }
+  .prose-news ul, .prose-news ol { padding-left: 1.25rem; margin-bottom: 0.5rem; }
+  .prose-news ul { list-style: disc; }
+  .prose-news ol { list-style: decimal; }
+  .prose-news li { margin-bottom: 0.2rem; }
+  .prose-news strong { color: var(--color-primary-dark); }
+  .prose-news em { font-style: italic; }
+  .prose-news a { color: var(--color-primary); text-decoration: underline; }
+  .prose-news img { max-width: 100%; height: auto; border-radius: 0.375rem; margin: 0.5rem 0; }
+  .prose-news blockquote { margin: 0.5rem 0; padding: 0.5rem 0.875rem; border-left: 3px solid var(--color-accent); background: rgba(201,162,39,0.06); border-radius: 0 0.375rem 0.375rem 0; }
+  .prose-news hr { border: 0; height: 1px; background: var(--color-border); margin: 1rem 0; }
+  .prose-news code { background: #f3f4f6; padding: 0.1rem 0.3rem; border-radius: 0.25rem; font-size: 0.85em; }
 </style>
 </head>
 <body class="bg-cream" x-data="adminApp()" x-init="init()" x-cloak>
@@ -119,20 +137,189 @@
     </div>
 
     <!-- Tabs -->
-    <div class="container-narrow flex gap-1 border-t" style="border-color: var(--color-border)">
-      <button @click="tab='publications'" class="admin-tab" :class="tab==='publications' && 'active'">
+    <div class="container-narrow flex gap-1 border-t overflow-x-auto" style="border-color: var(--color-border)">
+      <button @click="tab='news'" class="admin-tab whitespace-nowrap" :class="tab==='news' && 'active'">
+        📰 ข่าวสาร/บทความ <span class="text-xs ml-1" x-text="`(${news.length})`"></span>
+      </button>
+      <button @click="tab='publications'" class="admin-tab whitespace-nowrap" :class="tab==='publications' && 'active'">
         📚 ผลงานวิจัย <span class="text-xs ml-1" x-text="`(${pubs.length})`"></span>
       </button>
-      <button @click="tab='profile'" class="admin-tab" :class="tab==='profile' && 'active'">
+      <button @click="tab='profile'" class="admin-tab whitespace-nowrap" :class="tab==='profile' && 'active'">
         👤 Profile
       </button>
-      <button @click="tab='help'" class="admin-tab" :class="tab==='help' && 'active'">
-        💡 News / Help
+      <button @click="tab='help'" class="admin-tab whitespace-nowrap" :class="tab==='help' && 'active'">
+        💡 คู่มือ
       </button>
     </div>
   </header>
 
   <main class="container-narrow py-6">
+
+    <!-- ============================================================ -->
+    <!-- TAB: NEWS / FEATURED ARTICLES                                  -->
+    <!-- ============================================================ -->
+    <section x-show="tab==='news' && !newsShowForm">
+      <div class="flex items-center justify-between mb-4 flex-wrap gap-3">
+        <div>
+          <h2 class="text-2xl font-bold">ข่าวสาร / บทความเด่น</h2>
+          <p class="text-xs text-muted">บทความสำคัญที่จะแสดงเป็น "บทความเด่น" บนเว็บ (สำหรับ blog ทั่วไปใช้ WordPress)</p>
+        </div>
+        <div class="flex gap-2">
+          <a href="https://wordpress.com/post/asanoku.wordpress.com" target="_blank" rel="noopener" class="btn-outline text-sm">
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+            เขียนใน WordPress
+          </a>
+          <button @click="newNews()" class="btn-primary text-sm">
+            <i data-lucide="plus" class="w-4 h-4"></i>
+            เพิ่มบทความเด่น
+          </button>
+        </div>
+      </div>
+
+      <!-- List -->
+      <div class="space-y-3">
+        <template x-for="p in news" :key="p.slug">
+          <div class="admin-card">
+            <div class="flex items-start justify-between gap-4 flex-wrap">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="text-xs font-bold text-accent" x-text="p.date"></span>
+                  <template x-for="t in (p.tags || [])">
+                    <span class="chip chip-accent text-xs" x-text="`#${t}`"></span>
+                  </template>
+                </div>
+                <h3 class="font-semibold leading-snug mb-1" x-text="p.title?.th || p.title?.en"></h3>
+                <p class="text-sm text-muted" x-text="(p.excerpt?.th || p.excerpt?.en || '').slice(0, 150)"></p>
+                <p class="text-xs text-muted mt-1" x-show="p.cover">📷 <span x-text="p.cover"></span></p>
+              </div>
+              <div class="flex gap-1">
+                <a :href="`news.html#${p.slug}`" target="_blank" class="icon-btn" title="ดูบนเว็บ">
+                  <i data-lucide="eye" class="w-4 h-4"></i>
+                </a>
+                <button @click="editNews(p.slug)" class="icon-btn" title="แก้ไข">
+                  <i data-lucide="pencil" class="w-4 h-4"></i>
+                </button>
+                <button @click="deleteNews(p.slug)" class="icon-btn danger" title="ลบ">
+                  <i data-lucide="trash-2" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </template>
+        <div x-show="news.length === 0" class="admin-card text-center text-muted">
+          ยังไม่มีบทความเด่น — กด "เพิ่มบทความเด่น" ด้านบน
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- TAB: NEWS — FORM                                               -->
+    <!-- ============================================================ -->
+    <section x-show="tab==='news' && newsShowForm">
+      <button @click="cancelNewsForm()" class="text-sm text-primary hover:underline mb-4">← กลับไปยังรายการ</button>
+      <h2 class="text-2xl font-bold mb-4" x-text="newsEditingSlug ? 'แก้ไขบทความ' : 'เพิ่มบทความใหม่'"></h2>
+
+      <div class="admin-card space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div>
+            <label class="admin-label">วันที่ *</label>
+            <input type="date" x-model="newsForm.date" class="admin-input" />
+          </div>
+          <div class="md:col-span-2">
+            <label class="admin-label">Tags (คั่นด้วย ,)</label>
+            <input type="text" x-model="newsForm.tags" placeholder="edtech, ai, teaching" class="admin-input" />
+          </div>
+        </div>
+
+        <div>
+          <label class="admin-label">หัวข้อ (ไทย) *</label>
+          <input id="news-title-th" type="text" x-model="newsForm.titleTh" class="admin-input" />
+        </div>
+        <div>
+          <label class="admin-label">Title (English)</label>
+          <input type="text" x-model="newsForm.titleEn" class="admin-input" />
+        </div>
+
+        <div>
+          <label class="admin-label">สรุปสั้น (ไทย) — แสดงในหน้า list</label>
+          <textarea x-model="newsForm.excerptTh" rows="2" class="admin-input"></textarea>
+        </div>
+        <div>
+          <label class="admin-label">Excerpt (English)</label>
+          <textarea x-model="newsForm.excerptEn" rows="2" class="admin-input"></textarea>
+        </div>
+
+        <!-- Cover image -->
+        <div>
+          <label class="admin-label">รูป Cover (แสดงในหน้า list + บนสุดของบทความ)</label>
+          <div class="flex gap-2 items-center">
+            <input type="text" x-model="newsForm.cover" placeholder="assets/img/news/..." class="admin-input flex-1" />
+            <label class="btn-outline text-sm cursor-pointer whitespace-nowrap" :class="newsUploading && 'opacity-50 pointer-events-none'">
+              <i data-lucide="upload" class="w-4 h-4"></i>
+              <span>อัปโหลด</span>
+              <input type="file" accept="image/*" class="hidden" @change="onNewsImageUpload($event, 'cover')" />
+            </label>
+          </div>
+          <img x-show="newsForm.cover" :src="`../${newsForm.cover}`" :onerror="`this.src='${newsForm.cover}'`" class="mt-2 max-h-40 rounded-lg border" />
+        </div>
+
+        <!-- Content (Markdown editor + preview) -->
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <label class="admin-label mb-0">เนื้อหา (Markdown) *</label>
+            <div class="flex gap-2 items-center">
+              <span x-show="newsUploading" class="text-xs text-muted" x-text="newsUploadProgress"></span>
+              <label class="text-xs font-semibold text-primary cursor-pointer hover:underline" :class="newsUploading && 'opacity-50 pointer-events-none'">
+                📷 แทรกรูปในเนื้อหา
+                <input type="file" accept="image/*" multiple class="hidden" @change="onNewsImageUpload($event, 'content')" />
+              </label>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+            <textarea
+              x-model="newsForm.content"
+              @input="updateNewsPreview()"
+              rows="20"
+              class="admin-input font-mono text-sm"
+              placeholder="## หัวข้อ&#10;&#10;เนื้อหา markdown...&#10;&#10;![คำอธิบาย](assets/img/news/image.png)"
+            ></textarea>
+            <div class="prose-news border rounded-lg p-4 bg-gray-50 overflow-y-auto max-h-[500px]" style="border-color: var(--color-border)">
+              <p x-show="!newsPreview" class="text-muted text-sm">Preview จะแสดงที่นี่...</p>
+              <div x-html="newsPreview"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Markdown cheat sheet -->
+        <details class="text-xs">
+          <summary class="cursor-pointer text-primary font-semibold">📖 Markdown cheat sheet</summary>
+          <div class="mt-2 p-3 bg-gray-50 rounded-lg space-y-1 font-mono">
+            <p># หัวข้อใหญ่ &nbsp;&nbsp; ## หัวข้อกลาง &nbsp;&nbsp; ### หัวข้อเล็ก</p>
+            <p>**ตัวหนา** &nbsp;&nbsp; *ตัวเอียง* &nbsp;&nbsp; ~~ขีดฆ่า~~</p>
+            <p>[คลิกที่นี่](https://link.com)</p>
+            <p>![คำอธิบายรูป](assets/img/news/photo.png)</p>
+            <p>- รายการ bullet</p>
+            <p>1. รายการตัวเลข</p>
+            <p>> คำคม / blockquote</p>
+            <p>--- คั่นเส้นแนวนอน</p>
+          </div>
+        </details>
+
+        <div x-show="!newsEditingSlug">
+          <label class="admin-label">Slug URL (auto-generated)</label>
+          <input type="text" x-model="newsForm.slug" :placeholder="suggestNewsSlug()" class="admin-input" />
+          <p class="text-xs text-muted mt-1">URL: <code x-text="`/news.html (slug: ${newsForm.slug || suggestNewsSlug()})`"></code></p>
+        </div>
+
+        <div class="flex gap-2 pt-2 sticky bottom-0 bg-white border-t pt-3" style="border-color: var(--color-border)">
+          <button @click="saveNews()" :disabled="saving" class="btn-primary">
+            <i data-lucide="save" class="w-4 h-4"></i>
+            <span x-text="saving ? 'กำลังบันทึก...' : 'บันทึก'"></span>
+          </button>
+          <button @click="cancelNewsForm()" class="btn-outline">ยกเลิก</button>
+        </div>
+      </div>
+    </section>
 
     <!-- ============================================================ -->
     <!-- TAB: PUBLICATIONS                                              -->

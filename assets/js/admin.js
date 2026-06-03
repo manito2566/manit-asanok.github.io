@@ -14,7 +14,18 @@ function adminApp() {
     showTokenHelp: false,
 
     // ---------- Tabs ----------
-    tab: 'publications',   // 'publications' | 'profile' | 'help'
+    tab: 'news',           // 'news' | 'publications' | 'profile' | 'help'
+
+    // ---------- News (Featured articles) state ----------
+    news: [],
+    newsIndexSha: '',
+    newsForm: emptyNewsForm(),
+    newsEditingSlug: null,
+    newsShowForm: false,
+    newsExistingMdSha: '',
+    newsPreview: '',
+    newsUploading: false,
+    newsUploadProgress: '',
 
     // ---------- Publications state ----------
     pubs: [],
@@ -81,7 +92,214 @@ function adminApp() {
     },
 
     async loadAll() {
-      await Promise.all([this.loadPubs(), this.loadProfile()]);
+      await Promise.all([this.loadNews(), this.loadPubs(), this.loadProfile()]);
+    },
+
+    // ============================================================
+    // NEWS (Featured articles)
+    // ============================================================
+    async loadNews() {
+      try {
+        const f = await GH.getFile('data/news/index.json');
+        this.news = f ? JSON.parse(f.content) : [];
+        this.newsIndexSha = f ? f.sha : '';
+        this.news.sort((a, b) => b.date.localeCompare(a.date));
+      } catch (e) {
+        this.notify(`โหลดข่าวสารไม่สำเร็จ: ${e.message}`, 'error');
+      }
+    },
+
+    newNews() {
+      this.newsForm = emptyNewsForm();
+      this.newsEditingSlug = null;
+      this.newsExistingMdSha = '';
+      this.newsPreview = '';
+      this.newsShowForm = true;
+      setTimeout(() => document.getElementById('news-title-th')?.focus(), 50);
+    },
+
+    async editNews(slug) {
+      const post = this.news.find(p => p.slug === slug);
+      if (!post) return;
+      this.newsEditingSlug = slug;
+      try {
+        const f = await GH.getFile(`data/news/${slug}.md`);
+        if (!f) throw new Error('Markdown file not found');
+        const body = f.content.replace(/^---[\s\S]*?---\s*/, '');
+        this.newsForm = {
+          slug,
+          date: post.date,
+          titleTh: post.title?.th || '',
+          titleEn: post.title?.en || '',
+          tags: (post.tags || []).join(', '),
+          excerptTh: post.excerpt?.th || '',
+          excerptEn: post.excerpt?.en || '',
+          cover: post.cover || '',
+          content: body.trim(),
+        };
+        this.newsExistingMdSha = f.sha;
+        this.updateNewsPreview();
+        this.newsShowForm = true;
+      } catch (e) {
+        this.notify(`เปิดโพสต์ไม่สำเร็จ: ${e.message}`, 'error');
+      }
+    },
+
+    cancelNewsForm() {
+      if ((this.newsForm.titleTh || this.newsForm.content) &&
+          !confirm('ยกเลิกการแก้ไข? ข้อมูลที่ยังไม่ save จะหาย')) return;
+      this.newsShowForm = false;
+      this.newsForm = emptyNewsForm();
+      this.newsEditingSlug = null;
+    },
+
+    updateNewsPreview() {
+      if (window.marked) this.newsPreview = marked.parse(this.newsForm.content || '');
+    },
+
+    suggestNewsSlug() {
+      const text = (this.newsForm.titleEn || this.newsForm.titleTh || '').toLowerCase();
+      const slug = text
+        .replace(/[^a-z0-9\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '')
+        .slice(0, 50);
+      const date = this.newsForm.date || new Date().toISOString().slice(0, 10);
+      return slug ? `${date}-${slug}` : `${date}-post`;
+    },
+
+    async onNewsImageUpload(event, fieldName) {
+      const files = event.target.files;
+      if (!files || files.length === 0) return;
+      this.newsUploading = true;
+      try {
+        const uploaded = [];
+        for (let i = 0; i < files.length; i++) {
+          const file = files[i];
+          this.newsUploadProgress = `อัปโหลด ${i + 1}/${files.length}: ${file.name}`;
+          const slug = this.newsEditingSlug || this.suggestNewsSlug();
+          const safe = file.name.replace(/[^a-zA-Z0-9._-]/g, '-').toLowerCase();
+          const path = `assets/img/news/${slug}-${Date.now()}-${safe}`;
+          const buf = await file.arrayBuffer();
+          const b64 = GH.bufferToBase64(buf);
+          await GH.putBinaryFile(path, b64, `Upload image: ${path}`);
+          uploaded.push(path);
+        }
+        if (fieldName === 'cover') {
+          this.newsForm.cover = uploaded[0];
+        } else {
+          const inserts = uploaded.map(u => `\n![](${u})\n`).join('');
+          this.newsForm.content += inserts;
+          this.updateNewsPreview();
+        }
+        this.notify(`อัปโหลด ${uploaded.length} รูปสำเร็จ`, 'success');
+      } catch (e) {
+        this.notify(`อัปโหลดรูปไม่สำเร็จ: ${e.message}`, 'error');
+      } finally {
+        this.newsUploading = false;
+        this.newsUploadProgress = '';
+        event.target.value = '';
+      }
+    },
+
+    async saveNews() {
+      if (!this.newsForm.titleTh && !this.newsForm.titleEn) {
+        this.notify('กรุณาใส่หัวข้ออย่างน้อย 1 ภาษา', 'error');
+        return;
+      }
+      if (!this.newsForm.date) { this.notify('กรุณาใส่วันที่', 'error'); return; }
+      if (!this.newsForm.content) { this.notify('กรุณาใส่เนื้อหา', 'error'); return; }
+
+      this.saving = true;
+      try {
+        const slug = this.newsEditingSlug || this.newsForm.slug || this.suggestNewsSlug();
+        const tags = this.newsForm.tags.split(',').map(t => t.trim()).filter(Boolean);
+
+        // Build YAML frontmatter
+        const frontmatter = [
+          '---',
+          'title:',
+          `  th: "${escYaml(this.newsForm.titleTh)}"`,
+          `  en: "${escYaml(this.newsForm.titleEn)}"`,
+          `date: ${this.newsForm.date}`,
+          tags.length ? `tags: [${tags.join(', ')}]` : '',
+          this.newsForm.cover ? `cover: ${this.newsForm.cover}` : '',
+          '---',
+          '',
+        ].filter(Boolean).join('\n');
+        const mdContent = frontmatter + this.newsForm.content.trim() + '\n';
+
+        const mdPath = `data/news/${slug}.md`;
+        const action = this.newsEditingSlug ? 'Update' : 'Add';
+
+        // 1) Write markdown
+        await GH.putTextFile(
+          mdPath, mdContent,
+          `${action} article: ${this.newsForm.titleTh || this.newsForm.titleEn}`,
+          this.newsExistingMdSha || undefined,
+        );
+
+        // 2) Update index.json
+        const cur = await GH.getFile('data/news/index.json');
+        let news = cur ? JSON.parse(cur.content) : [];
+        news = news.filter(p => p.slug !== slug);
+        news.unshift({
+          slug,
+          date: this.newsForm.date,
+          title: { th: this.newsForm.titleTh || '', en: this.newsForm.titleEn || '' },
+          tags,
+          ...(this.newsForm.cover ? { cover: this.newsForm.cover } : {}),
+          excerpt: {
+            th: this.newsForm.excerptTh || '',
+            en: this.newsForm.excerptEn || '',
+          },
+        });
+        news.sort((a, b) => b.date.localeCompare(a.date));
+        const newIndex = JSON.stringify(news, null, 2) + '\n';
+        await GH.putTextFile(
+          'data/news/index.json',
+          newIndex,
+          `${action} news index: ${slug}`,
+          cur ? cur.sha : undefined,
+        );
+
+        this.notify(`บันทึก "${this.newsForm.titleTh || this.newsForm.titleEn}" สำเร็จ — เว็บอัปเดตใน 1-2 นาที`, 'success');
+        this.newsShowForm = false;
+        this.newsForm = emptyNewsForm();
+        this.newsEditingSlug = null;
+        await this.loadNews();
+      } catch (e) {
+        this.notify(`บันทึกไม่สำเร็จ: ${e.message}`, 'error');
+      } finally {
+        this.saving = false;
+      }
+    },
+
+    async deleteNews(slug) {
+      const post = this.news.find(p => p.slug === slug);
+      if (!post) return;
+      const t = post.title?.th || post.title?.en || slug;
+      if (!confirm(`ลบข่าวสาร "${t}"?\n\nไฟล์ markdown จะถูกลบ และข้อมูลใน index จะหาย\n(รูปประกอบไม่ถูกลบ — ต้องลบเองภายหลังถ้าต้องการ)`)) return;
+      this.saving = true;
+      try {
+        const md = await GH.getFile(`data/news/${slug}.md`);
+        if (md) {
+          await GH.deleteFile(`data/news/${slug}.md`, `Delete article: ${t}`, md.sha);
+        }
+        const cur = await GH.getFile('data/news/index.json');
+        if (cur) {
+          const news = JSON.parse(cur.content).filter(p => p.slug !== slug);
+          const newIndex = JSON.stringify(news, null, 2) + '\n';
+          await GH.putTextFile('data/news/index.json', newIndex, `Remove ${slug} from index`, cur.sha);
+        }
+        this.notify(`ลบ "${t}" สำเร็จ`, 'success');
+        await this.loadNews();
+      } catch (e) {
+        this.notify(`ลบไม่สำเร็จ: ${e.message}`, 'error');
+      } finally {
+        this.saving = false;
+      }
     },
 
     // ============================================================
@@ -335,6 +553,24 @@ function adminApp() {
       setTimeout(() => { this.toast = ''; }, type === 'error' ? 6000 : 3500);
     },
   };
+}
+
+function emptyNewsForm() {
+  return {
+    slug: '',
+    date: new Date().toISOString().slice(0, 10),
+    titleTh: '',
+    titleEn: '',
+    tags: '',
+    excerptTh: '',
+    excerptEn: '',
+    cover: '',
+    content: '',
+  };
+}
+
+function escYaml(s) {
+  return String(s || '').replace(/\\/g, '\\\\').replace(/"/g, '\\"');
 }
 
 function emptyPubForm() {
